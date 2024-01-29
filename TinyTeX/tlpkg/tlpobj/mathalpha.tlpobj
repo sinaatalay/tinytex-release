@@ -1,0 +1,22 @@
+name mathalpha
+category Package
+revision 61089
+shortdesc General package for loading maths alphabets in LaTeX
+longdesc Package mathalfa was renamed to mathalpha. For backward
+longdesc compatibility the old name will continue to be recognized in
+longdesc LaTeX documents. The package provides means of loading maths
+longdesc alphabets (such as are normally addressed via macros \mathcal,
+longdesc \mathbb, \mathfrak and \mathscr), offering various features
+longdesc normally missing in existing packages for this job.
+containersize 7156
+containerchecksum 9c56ad5cabba0fc7ff7403882cd46161be0b4d7bcaf632e48eab5170b1350a1c780a9f98ed535466ae7c17a387a461fa4663ffd3c4fac5cb01ecb77bccdcfec6
+doccontainersize 1888792
+doccontainerchecksum 5de9923e39ccf9b55f10f0b97067d001ead5598423174808d2a7636c96f8fbd2e8a8e6c0d66140f62d51b9263a736cb6106cf6db0e16e62ee5d9f3887baa3159
+runfiles size=16
+ texmf-dist/tex/latex/mathalpha/mathalfa.sty
+ texmf-dist/tex/latex/mathalpha/mathalpha.sty
+catalogue-alias mathalfa
+catalogue-ctan /macros/latex/contrib/mathalpha
+catalogue-license lppl1.3c
+catalogue-topics maths
+catalogue-version 1.143

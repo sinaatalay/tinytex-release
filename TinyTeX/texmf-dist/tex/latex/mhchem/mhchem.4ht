@@ -1,0 +1,206 @@
+%% mhchem.4ht
+%% 2021-12-31
+%% Copyright 2015-2021 Martin Hensel
+%
+%% This file is part of the mhchem bundle for LaTeX
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c
+% which is included as lppl-1-3c.txt.
+%
+% This work has the LPPL maintenance status "maintained".
+% The Current Maintainer of this work is Martin Hensel.
+%
+% ( In order to fight spam, the maintainer's contact      )
+% ( information is "encrypted" with ROT13.                )
+% ( If you do not know ROT13 yet and have no tool for     )
+% ( decryption, simply do an Internet search for "ROT13". )
+%
+% ,---[ ROT 13 ]---
+% | Gur Pheerag Znvagnvare bs guvf jbex vf Znegva Urafry
+% |   jub pna or pbagnpgrq ivn
+% |     zupurz@ZnegvaUrafry.qr
+% |   be ivn znvy
+% |     Znegva Urafry
+% |     Cbfgfge. 20
+% |     09232 Unegznaafqbes
+% |     Treznal
+% `----------
+%
+% This work consists of all files listed in manifest.txt.
+%
+%
+\ExplSyntaxOn
+
+\Css
+  { 
+    .mhchem ~ .mhchem-cf { white-space: nowrap; }
+    .mhchem ~ .mhchem-isotope { font-size: 0.65em; line-height: 1; display: inline-block; vertical-align: sub; text-align: right; }
+    .mhchem ~ .mhchem-supsub  { font-size: 0.65em; line-height: 1; display: inline-block; vertical-align: sub; }
+    .mhchem ~ .mhchem-sup     { font-size: 0.65em; line-height: 1; display: inline-block; vertical-align: 68\%; }
+    .mhchem ~ .mhchem-sub     { font-size: 0.65em; line-height: 1; display: inline-block; vertical-align: sub; }
+    .mhchem ~ .mhchem-rlap { display: inline-block; width: 0; }
+    .mhchem ~ .mhchem-bond-half-top    { vertical-align: 60\%; }
+    .mhchem ~ .mhchem-bond-half-middle { vertical-align: 35\%; }
+    .mhchem ~ .mhchem-bond-top         { vertical-align: 20\%; }
+    .mhchem ~ .mhchem-bond-bottom      { vertical-align: -20\%; }
+    .mhchem ~ .mhchem-arrow { display: inline-flex; flex-direction: column; vertical-align: middle; }
+    .mhchem ~ .mhchem-arrow > span { line-height: 80\%; text-align: center; }
+    .mhchem ~ .mhchem-arrow > .mhchem-above { min-height: 1em; font-size: 60\%; }
+    .mhchem ~ .mhchem-arrow > .mhchem-below { min-height: 1em; font-size: 60\%; }
+    .mhchem ~ .mhchem-arrow > span.mhchem-arrow-normal { line-height: 40\%; }
+    .mhchem ~ .mhchem-arrow > span.mhchem-arrow-larger { line-height: 25\%; font-size: 150\%; }
+    .mhchem ~ .mhchem-arrow > span.mhchem-arrow-complement { line-height: 25\%; }
+  }
+\cs_set_protected:Npn \__mhchem_output_begin_ce: { \HCode { <span~class="mhchem"> } }
+\cs_set_protected:Npn \__mhchem_output_end_ce: { \HCode { </span> } }
+\cs_set_protected:Npn \__mhchem_output_begin_cf: { \HCode { <span~class="mhchem-cf"> } }
+\cs_set_protected:Npn \__mhchem_output_end_cf: { \HCode { </span> } }
+\cs_set_protected:Npn \__mhchem_output_coreFive:nnnnnnn #1#2#3#4#5#6#7
+  {
+    \bool_if:nT
+      { \tl_if_empty_p:n {#7}  &&  ! \tl_if_empty_p:n {#5} }
+      { \bool_set_true:N \l__mhchem_option_superscriptsStacked_bool }
+      
+    \tl_if_empty:nF {#1#2} 
+      {
+        \HCode { <span~class="mhchem-isotope"> }
+        \__mhchem_output_withFont:n { #1 } 
+        \HCode { <br~/>&\#xfeff; } 
+        \__mhchem_output_withFont:n { #2 }
+        \HCode { </span> }
+      }
+    \__mhchem_output_withFont:n { #3 } 
+    \bool_if:NTF \l__mhchem_option_superscriptsStacked_bool
+      {
+        \tl_if_empty:nTF {#4#5#7} 
+          {
+            \tl_if_empty:nF {#6}
+              {
+                \HCode { <span~class="mhchem-sub"> }
+                \__mhchem_output_withFont:n { #6 }
+                \HCode { </span> } 
+              }
+          }
+          {
+            \tl_if_empty:nTF {#6}
+              {
+                \HCode { <span~class="mhchem-sup"> }
+                \__mhchem_output_withFont:n { #4#5#7 }
+                \HCode { </span> }
+              }
+              { 
+              	\HCode { <span~class="mhchem-supsub"> }
+              	\__mhchem_output_withFont:n { #4#5#7 }
+              	\HCode { <br~/>&\#xfeff; }
+              	\__mhchem_output_withFont:n { #6 }
+              	\HCode { </span> } 
+             }
+          }
+      }
+      {
+        \tl_if_empty:nF {#4}
+          {
+            \HCode { <span~class="mhchem-sup"> }
+            \__mhchem_output_withFont:n { #4 }
+            \HCode { </span> } 
+          }
+		\tl_if_empty:nF {#6}
+		  { 
+		    \HCode { <span~class="mhchem-sub"> } 
+		    \__mhchem_output_withFont:n { #6 } 
+		    \HCode { </span> } 
+		  }
+        \tl_if_empty:nF {#5#7} 
+          { 
+            \HCode { <span~class="mhchem-sup"> }
+            \__mhchem_output_withFont:n { #5#7 }
+            \HCode { </span> } 
+          }
+      }
+  }
+
+\cs_set_protected:Npn \__mhchem_output_withFont:n #1  %. output #1 as math or text
+  {
+    \bool_if:NTF \l__mhchem_output_isMathMode_bool
+      { \mathrm {#1} }
+      { \text {#1} }
+  }
+\cs_set_protected:Npn \__mhchem_output_skipAfterAmount: { \HCode { ~ } }  % space for copy & paste
+\cs_set_protected:Npn \__mhchem_output_skipBeforeStateOfAggregation: {}
+\cs_set_protected:Npn \__mhchem_output_minus: { \HCode { &minus; } }
+\cs_set_protected:Npn \__mhchem_output_operatorPlus:
+  { \HCode { <span~class="mhchem-operator"> ~ } + \HCode { ~ </span> } }
+\cs_set_protected:Npn \__mhchem_output_operatorMinus:
+  { \HCode { <span~class="mhchem-operator"> ~ &minus; ~ </span> } }
+\cs_set_protected:Npn \__mhchem_output_operatorEquals:
+  { \HCode { <span~class="mhchem-operator"> ~ } = \HCode { ~ </span> } }
+\cs_set_protected:Npn \__mhchem_output_operatorPlusMinus:
+  { \HCode { <span~class="mhchem-operator"> ~ &plusmn; ~ </span> } }
+\cs_set_protected:Npn \__mhchem_output_electronDot: { \HCode { &bull; } }
+\cs_set_protected:Npn \__mhchem_output_additionCompound: { \HCode { &middot; } }
+\cs_set_protected:Npn \__mhchem_output_excited: { \HCode { &\#x2731; } }
+\cs_set_protected:Npn \__mhchem_output_commaDecimal: { , }
+\cs_set_protected:Npn \__mhchem_output_commaEnumeration: { , \HCode { &thinsp; } }
+\cs_set_protected:Npn \__mhchem_output_commaEnumerationSmall: { , \HCode { &thinsp; } }
+  
+\cs_set_protected:Npn \__mhchem_output_bond_single: { \HCode { &minus; } }
+\cs_set_protected:Npn \__mhchem_output_bond_double: { \HCode { &equals; } }
+\cs_set_protected:Npn \__mhchem_output_bond_triple: { \HCode { &equiv; } }
+\cs_set_protected:Npn \__mhchem_output_bond_half:  % todo: improve
+  { \HCode { <span~class="mhchem-bond-half-middle">&\#xfe4d;</span> } }
+\cs_set_protected:Npn \__mhchem_output_bond_oneAndHalf:  % todo: improve 
+  { \HCode { <span~class="mhchem-rlap">&minus;</span><span~class="mhchem-bond-half-top">&\#xfe4d;</span> } }
+\cs_set_protected:Npn \__mhchem_output_bond_twoAndHalf:  % todo: improve
+  { \HCode { <span~class="mhchem-rlap">=</span><span~class="mhchem-bond-half-top">&\#xfe4d;</span> } }
+\cs_set_protected:Npn \__mhchem_output_bond_twoAndHalff:  % todo: improve
+  { \HCode { <span~class="mhchem-rlap~mhchem-bond-top">&minus;</span><span~class="mhchem-rlap~mhchem-bond-bottom">&minus;</span><span~class="mhchem-bond-half-middle">&\#xfe4d;</span> } }
+\cs_set_protected:Npn \__mhchem_output_bond_dotdotdot: { \HCode { &middot;&middot;&middot; } }
+\cs_set_protected:Npn \__mhchem_output_bond_dotdotdotdot: { \HCode { &middot;&middot;&middot;&middot; } }
+\cs_set_protected:Npn \__mhchem_output_bond_rightArrow: { \HCode { &\#xffeb; } }
+\cs_set_protected:Npn \__mhchem_output_bond_leftArrow: { \HCode { &\#xffe9; } }
+
+\cs_set_protected:Npn \__mhchem_arrow_deploy:nnnnn #1#2#3#4#5
+  {
+    \HCode { <span~class="mhchem-arrow"> }
+    \tl_if_empty:nF {#3#5}
+      {
+        \HCode { <span~class="mhchem-above"> }
+        \str_case:nnF {#2}
+          {
+            {   } { \ce { #3 } }
+            { M } { \ensuremath { #3 } }
+            { T } { \text { #3 } }
+            { C } { \ce { #3 } }
+          }
+          { \msg_error:nnn { mhchem } { unexpected-arrow-type } {#2} }
+        \HCode { </span> }
+      }
+    \str_case:nnF {#1}
+      {
+        { yields } { \HCode { <span~class="mhchem-arrow-normal">&\#x2192;</span> } }
+        { yieldsLeft } { \HCode { <span~class="mhchem-arrow-normal">&\#x2190;</span> } }
+        { yieldsLeftRight } { \HCode { <span~class="mhchem-arrow-normal">&\#x21c4;</span> } }  % todo: improve
+        { mesomerism } { \HCode { <span~class="mhchem-arrow-normal">&\#x2194;</span> } }  % todo: improve
+        { equilibrium } { \HCode { <span~class="mhchem-arrow-normal">&\#x21cc;</span> } }  % todo: improve
+        { equilibriumRight } { \HCode { <span~class="mhchem-arrow-larger">&\#x21c0;</span><span~class="mhchem-arrow-complement">&\#x21bd;</span> } }  % todo: improve
+        { equilibriumLeft } { \HCode { <span~class="mhchem-arrow-complement">&\#x21c0;</span><span~class="mhchem-arrow-larger">&\#x21bd;</span> } }  % todo: improve
+      }
+      { \msg_error:nnn { mhchem } { unexpected-arrow-type } {#1} }
+    \tl_if_empty:nF {#3#5}
+      {
+        \HCode { <span~class="mhchem-above"> }
+        \str_case:nnF {#2}
+          {
+            {   } { \ce { #5 } }
+            { M } { \ensuremath { #5 } }
+            { T } { \text { #5 } }
+            { C } { \ce { #5 } }
+          }
+          { \msg_error:nnn { mhchem } { unexpected-arrow-type } {#2} }
+        \HCode { </span> }
+      }
+    \HCode { </span> }
+  }
+  
+\ExplSyntaxOff

@@ -1,0 +1,8 @@
+name biber.windows
+category Package
+revision 66402
+shortdesc windows files of biber
+containersize 24383064
+containerchecksum bf3536f19ce56e759d3d2dcbdc162b935a4b33920e650ec3def2a8a9451ed2a79188fbc98a0de6ae80ecd53185124a66307cd40678892790200507c4108d5671
+binfiles arch=windows size=7749
+ bin/windows/biber.exe

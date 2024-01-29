@@ -1,0 +1,21 @@
+name sidenotes
+category Package
+revision 54524
+shortdesc Typeset notes containing rich content, in the margin
+longdesc The package allows typesetting of texts with notes, figures,
+longdesc citations, captions and tables in the margin. This is common
+longdesc (for example) in science text books.
+containersize 4444
+containerchecksum 6cf38305b919deca31761f1420c18a0ffb5ba18e045515af058e9b7d73535730117f757f16a8030d97247378efa46428ed9f28757524b650a96133aae6fe4e11
+doccontainersize 304908
+doccontainerchecksum db5f8666987eeb2c8e29426a91bc731f8c380176b3f0285c4c4ca8554b91c85af52d0ebe16d57cdb558d8c7d1e97c6f169addb12a57a107c00ff36486dd2d218
+srccontainersize 5992
+srccontainerchecksum 6d237c8df983f2a3d056038067039c45604086a377cdf02b9adc0e1c125619ff911165891d27be7e30466d3cda03f62c32bc7edc73152460d21443a5cc6886f5
+runfiles size=4
+ texmf-dist/tex/latex/sidenotes/caesar_book.cls
+ texmf-dist/tex/latex/sidenotes/sidenotes.sty
+catalogue-also footmisc
+catalogue-ctan /macros/latex/contrib/sidenotes
+catalogue-license lppl1.3
+catalogue-topics marginal
+catalogue-version 1.00a

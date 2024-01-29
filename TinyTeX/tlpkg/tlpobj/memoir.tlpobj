@@ -1,0 +1,43 @@
+name memoir
+category Package
+revision 69600
+shortdesc Typeset fiction, non-fiction and mathematical books
+longdesc The memoir class is for typesetting poetry, fiction,
+longdesc non-fiction, and mathematical works. Permissible document
+longdesc 'base' font sizes range from 9 to 60pt. There is a range of
+longdesc page-styles and well over a dozen chapter-styles to choose
+longdesc from, as well as methods for specifying your own layouts and
+longdesc designs. The class also provides the functionality of over
+longdesc thirty of the more popular packages, thus simplifying document
+longdesc sources. Users who wish to use the hyperref package, in a
+longdesc document written with the memoir class, should also use the
+longdesc memhfixc package (part of this bundle). Note, however, that any
+longdesc current version of hyperref actually loads the package
+longdesc automatically if it detects that it is running under memoir.
+containersize 69116
+containerchecksum ef905bedb5b27fcc0e65e2b86ce9f949135e0bf4c857431a0af68eaf5a4472e69ffc687d243560d69a3727d8db2388ff9da7c86283e625964ffea677f7e80c0b
+doccontainersize 3127948
+doccontainerchecksum 4e2b4f36a5a894ed7579e1018e0ca2309791716fb9e36623237c9c4021441893c634ffabdbb33bc23b63a599d4576bd1ce2f1c549d424c9d87c6df2b12e43a09
+srccontainersize 216500
+srccontainerchecksum 31d3120456a4451e955c0476846c057591836de72c76b8de9b421d2e22d7f1018d01073e8f9354ae82d9603ca9fd153a617cf9699b31a1c79254eaf2094503ef
+runfiles size=115
+ texmf-dist/makeindex/memoir/basic.gst
+ texmf-dist/tex/latex/memoir/mem10.clo
+ texmf-dist/tex/latex/memoir/mem11.clo
+ texmf-dist/tex/latex/memoir/mem12.clo
+ texmf-dist/tex/latex/memoir/mem14.clo
+ texmf-dist/tex/latex/memoir/mem17.clo
+ texmf-dist/tex/latex/memoir/mem20.clo
+ texmf-dist/tex/latex/memoir/mem25.clo
+ texmf-dist/tex/latex/memoir/mem30.clo
+ texmf-dist/tex/latex/memoir/mem36.clo
+ texmf-dist/tex/latex/memoir/mem48.clo
+ texmf-dist/tex/latex/memoir/mem60.clo
+ texmf-dist/tex/latex/memoir/mem9.clo
+ texmf-dist/tex/latex/memoir/memhfixc.sty
+ texmf-dist/tex/latex/memoir/memoir.cls
+catalogue-also memdesign
+catalogue-ctan /macros/latex/contrib/memoir
+catalogue-license lppl1.3c
+catalogue-topics book-pub class
+catalogue-version 3.8.2

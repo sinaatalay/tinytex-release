@@ -1,0 +1,1012 @@
+%% hpstatement-ga.inc.sty
+%% 2021-12-31
+%% Copyright 2019-2021 Martin Hensel
+%
+%% This file is part of the mhchem bundle for LaTeX
+%
+%% For the content of the phrases:
+% This work is licensed under the Creative Commons Attribution 4.0 International licence
+% (https://creativecommons.org/licenses/by/4.0/). This means that you can re-use the content
+% provided you acknowledge the source and indicate any changes you have made.
+% The data is not necessarily comprehensive, complete, accurate or up to date.
+% The acknowledgement is not needed when using statements of the data set for labelling products, of course, as this is the intended usage.
+% (c) European Union, https://eur-lex.europa.eu, 1998-2021, CC BY 4.0
+% (c) hpstatements contributors, https://github.com/mhchem/hpstatements/contributors, 2019-2021, CC BY 4.0
+%
+%
+\ExplSyntaxOn
+\group_begin:
+\char_set_catcode_space:n {`\ }% allow spaces
+\char_set_catcode_letter:n {`\@}%
+%
+\tl_gset:cn{g__mhchem_hp_ga_H200-0_tl}{{H200}{%
+  \__mhchem_hp_s:nnn{20081216}{Pl\'eascáin \'eagobhsaí.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H201-0_tl}{{H201}{%
+  \__mhchem_hp_s:nnn{20081216}{Pl\'eascach; guais mhórphl\'easctha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H202-0_tl}{{H202}{%
+  \__mhchem_hp_s:nnn{20081216}{Pl\'eascach, guais throm teilgin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H203-0_tl}{{H203}{%
+  \__mhchem_hp_s:nnn{20081216}{Pl\'eascach; guais dóiteáin, phl\'easctha nó teilgin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H204-0_tl}{{H204}{%
+  \__mhchem_hp_s:nnn{20081216}{Guais dóiteáin nó teilgin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H205-0_tl}{{H205}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e go mbeadh mórphl\'eascadh i dtine.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H206-0_tl}{{H206}{%
+  \__mhchem_hp_s:nnn{20201017}{Guais dóiteáin, phl\'easctha nó teilgin; baol m\'eadaithe pl\'easctha má laghdaítear an dí-íogróir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H207-0_tl}{{H207}{%
+  \__mhchem_hp_s:nnn{20201017}{Guais dóiteáin nó teilgin; baol m\'eadaithe pl\'easctha má laghdaítear an dí-íogróir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H208-0_tl}{{H208}{%
+  \__mhchem_hp_s:nnn{20201017}{Guais dóiteáin; baol m\'eadaithe pl\'easctha má laghdaítear an dí-íogróir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H220-0_tl}{{H220}{%
+  \__mhchem_hp_s:nnn{20081216}{Gás fíor-inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H221-0_tl}{{H221}{%
+  \__mhchem_hp_s:nnn{20081216}{Gás inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H222-0_tl}{{H222}{%
+  \__mhchem_hp_s:nnn{20081216}{Aerasól fíor-inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H223-0_tl}{{H223}{%
+  \__mhchem_hp_s:nnn{20081216}{Aerasól inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H224-0_tl}{{H224}{%
+  \__mhchem_hp_s:nnn{20081216}{Leacht fíor-inadhainte agus gal fhíor-inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H225-0_tl}{{H225}{%
+  \__mhchem_hp_s:nnn{20081216}{Leacht an-inadhainte agus gal an-inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H226-0_tl}{{H226}{%
+  \__mhchem_hp_s:nnn{20081216}{Leacht inadhainte agus gal inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H228-0_tl}{{H228}{%
+  \__mhchem_hp_s:nnn{20081216}{Solad inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H229-0_tl}{{H229}{%
+  \__mhchem_hp_s:nnn{20150601}{Coimeádán brúchóirithe: D'fh\'eadfadh s\'e pl\'eascadh, má th\'eitear \'e.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H230-0_tl}{{H230}{%
+  \__mhchem_hp_s:nnn{20150601}{D'fh\'eadfadh s\'e imoibriú go pl\'eascach fiú mura bhfuil aer ann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H231-0_tl}{{H231}{%
+  \__mhchem_hp_s:nnn{20150601}{D'fh\'eadfadh s\'e imoibriú go pl\'eascach fiú mura bhfuil aer ann ag brú ardaithe agus/\hskip\z@skip{}nó ag teocht ardaithe.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H232-0_tl}{{H232}{%
+  \__mhchem_hp_s:nnn{20201017}{D'fh\'eadfadh an ní uathadhaint i gcás nochtadh don aer.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H240-0_tl}{{H240}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh t\'eamh a bheith ina chúis le pl\'eascadh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H241-0_tl}{{H241}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh t\'eamh a bheith ina chúis le dóiteán nó le pl\'eascadh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H242-0_tl}{{H242}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh t\'eamh a bheith ina chúis le dóiteán.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H250-0_tl}{{H250}{%
+  \__mhchem_hp_s:nnn{20081216}{T\'eann trí thine go spontáineach má nochtar don aer.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H251-0_tl}{{H251}{%
+  \__mhchem_hp_s:nnn{20081216}{F\'eint\'eamh: d'fh\'eadfadh s\'e dul trí thine.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H252-0_tl}{{H252}{%
+  \__mhchem_hp_s:nnn{20081216}{F\'eint\'eamh ina mhórchainníochtaí; d'fh\'eadfadh s\'e dul trí thine.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H260-0_tl}{{H260}{%
+  \__mhchem_hp_s:nnn{20081216}{I dteagmháil le huisce scaoiltear gáis inadhainte a d'fh\'eadfadh uathadhaint.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H261-0_tl}{{H261}{%
+  \__mhchem_hp_s:nnn{20081216}{I dteagmháil le huisce scaoiltear gáis inadhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H270-0_tl}{{H270}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le tine nó cur le tine; ocsaídeoir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H271-0_tl}{{H271}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le tine nó le pl\'eascadh; an-ocsaídeoir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H272-0_tl}{{H272}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e cur le tine; ocsaídeoir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H280-0_tl}{{H280}{%
+  \__mhchem_hp_s:nnn{20081216}{Gás istigh ann, faoi bhrú; d'fh\'eadfadh s\'e pl\'eascadh, má th\'eitear.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H281-0_tl}{{H281}{%
+  \__mhchem_hp_s:nnn{20081216}{Gás cuisnithe istigh ann; d'fh\'eadfadh s\'e a bheith ina chúis le dónna crióigineacha nó le díobháil chrióigineach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H290-0_tl}{{H290}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith creimneach do mhiotail.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H300-0_tl}{{H300}{%
+  \__mhchem_hp_s:nnn{20081216}{Marfach má shlogtar.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H301-0_tl}{{H301}{%
+  \__mhchem_hp_s:nnn{20081216}{Tocsaineach má shlogtar.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H302-0_tl}{{H302}{%
+  \__mhchem_hp_s:nnn{20081216}{Díobhálach má shlogtar.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H304-0_tl}{{H304}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith marfach má shlogtar \'e agus má th\'eann s\'e isteach sna haerbhealaí.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H310-0_tl}{{H310}{%
+  \__mhchem_hp_s:nnn{20081216}{Marfach i dteagmháil leis an gcraiceann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H311-0_tl}{{H311}{%
+  \__mhchem_hp_s:nnn{20081216}{Tocsaineach i dteagmháil leis an gcraiceann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H312-0_tl}{{H312}{%
+  \__mhchem_hp_s:nnn{20081216}{Díobhálach i dteagmháil leis an gcraiceann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H314-0_tl}{{H314}{%
+  \__mhchem_hp_s:nnn{20081216}{Ina chúis le dónna tromchúiseacha craicinn agus le damáiste don tsúil.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H315-0_tl}{{H315}{%
+  \__mhchem_hp_s:nnn{20081216}{Ina chúis le greannú craicinn.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H317-0_tl}{{H317}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le frithghníomh aill\'eirgeach craicinn.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H318-0_tl}{{H318}{%
+  \__mhchem_hp_s:nnn{20081216}{Ina chúis le damáiste tromchúiseach don tsúil.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H319-0_tl}{{H319}{%
+  \__mhchem_hp_s:nnn{20081216}{Ina chúis le greannú tromchúiseach don tsúil.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H330-0_tl}{{H330}{%
+  \__mhchem_hp_s:nnn{20081216}{Marfach má ionanálaítear.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H331-0_tl}{{H331}{%
+  \__mhchem_hp_s:nnn{20081216}{Tocsaineach má ionanálaítear.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H332-0_tl}{{H332}{%
+  \__mhchem_hp_s:nnn{20081216}{Díobhálach má ionanálaítear.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H334-0_tl}{{H334}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le siomptóim aill\'eirge nó asma nó le deacrachtaí análaithe má ionanálaítear \'e.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H335-0_tl}{{H335}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le greannú riospráide.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H336-0_tl}{{H336}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le codlatacht nó le meadhrán.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H340-0_tl}{{H340}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le h\'ealanga g\'einiteacha \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H340.0-0_tl}{{H340}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H340-1empty_tl}{{H340}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H340-1_tl}{{H340}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H341-0_tl}{{H341}{%
+  \__mhchem_hp_s:nnn{20081216}{Ceaptar go bhf\'eadfadh s\'e a bheith ina chúis le h\'ealanga g\'einiteacha \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H341.0-0_tl}{{H341}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H341-1empty_tl}{{H341}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H341-1_tl}{{H341}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H350-0_tl}{{H350}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le hailse \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H350.0-0_tl}{{H350}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H350-1empty_tl}{{H350}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H350-1_tl}{{H350}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H350i-0_tl}{{H350i}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le hailse trí ionanálú.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H351-0_tl}{{H351}{%
+  \__mhchem_hp_s:nnn{20081216}{Ceaptar go bhf\'eadfadh s\'e a bheith ina chúis le hailse \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H351.0-0_tl}{{H351}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H351-1empty_tl}{{H351}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H351-1_tl}{{H351}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360-0_tl}{{H360}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht nó don leanbh sa bhroinn \noexpand\textless{}tabhair an tsain\'eifeacht más eol \noexpand\textgreater{} \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360.0-0_tl}{{H360}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360-1empty_tl}{{H360}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360-1_tl}{{H360}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360F-0_tl}{{H360F}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360D-0_tl}{{H360D}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh don leanbh sa bhroinn.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360FD-0_tl}{{H360FD}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht. D'fh\'eadfadh s\'e damáiste a dh\'eanamh don leanbh sa bhroinn.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360Fd-0_tl}{{H360Fd}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht. Meastar go bhf\'eadfadh s\'e damáiste a dh\'eanamh don leanbh sa bhroinn.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H360Df-0_tl}{{H360Df}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh don leanbh sa bhroinn. Meastar go bhf\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361-0_tl}{{H361}{%
+  \__mhchem_hp_s:nnn{20081216}{Ceaptar go bhf\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht nó don leanbh sa bhroinn \noexpand\textless{}tabhair an tsain\'eifeacht más eol \noexpand\textgreater{} \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361.0-0_tl}{{H361}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361-1empty_tl}{{H361}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361-1_tl}{{H361}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361f-0_tl}{{H361f}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Meastar go bhf\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361d-0_tl}{{H361d}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Meastar go bhf\'eadfadh s\'e damáiste a dh\'eanamh don leanbh sa bhroinn.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H361fd-0_tl}{{H361fd}{%
+  \__mhchem_hp_s:nnn{20101201}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Meastar go bhf\'eadfadh s\'e damáiste a dh\'eanamh do thorthúlacht. Meastar go bhf\'eadfadh s\'e damáiste a dh\'eanamh don leanbh sa bhroinn.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H362-0_tl}{{H362}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e díobháil a dh\'eanamh do leanaí diúil.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H370-0_tl}{{H370}{%
+  \__mhchem_hp_s:nnn{20081216}{D\'eanann s\'e damáiste d'orgáin \noexpand\textless{}nó tabhair na horgáin go l\'eir a bhuailtear, más eol\noexpand\textgreater{} \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H370.0-0_tl}{{H370}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H370.1-0_tl}{{H370}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H370.1-1_tl}{{H370}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H370-1_tl}{{H370}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H370-2_tl}{{H370}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H371-0_tl}{{H371}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh damáiste a dh\'eanamh d'orgáin \noexpand\textless{}nó tabhair na horgáin go l\'eir a bhuailtear, más eol\noexpand\textgreater{} \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H371.0-0_tl}{{H371}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H371.1-0_tl}{{H371}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H371.1-1_tl}{{H371}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H371-1_tl}{{H371}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H371-2_tl}{{H371}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H372-0_tl}{{H372}{%
+  \__mhchem_hp_s:nnn{20081216}{D\'eanann damáiste d'orgáin \noexpand\textless{}nó tabhair na horgáin go l\'eir a bhuailtear, más eol\noexpand\textgreater{} trí nochtadh fada nó ilnochtadh \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H372.0-0_tl}{{H372}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H372.1-0_tl}{{H372}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H372.1-1_tl}{{H372}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H372-1_tl}{{H372}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H372-2_tl}{{H372}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H373-0_tl}{{H373}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e damáiste a dh\'eanamh d'orgáin \noexpand\textless{}nó tabhair na horgáin go l\'eir a bhuailtear, más eol\noexpand\textgreater{} trí nochtadh fada nó ilnochtadh \noexpand\textless{}tabhair an bealach nochta má tá s\'e cruthaithe go cinntitheach nach bealach nochta ar bith eile is cúis leis an nguais\noexpand\textgreater{}.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H373.0-0_tl}{{H373}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H373.1-0_tl}{{H373}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H373.1-1_tl}{{H373}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H373-1_tl}{{H373}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H373-2_tl}{{H373}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H300+H310-0_tl}{{H300\,+\,\hskip\z@skip{}H310}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar marfach \'e seo má shlogtar \'e nó má theagmhaíonn leis an gcraiceann}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H300+H310+H330-0_tl}{{H300\,+\,\hskip\z@skip{}H310\,+\,\hskip\z@skip{}H330}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar marfach \'e seo má shlogtar, má theagmhaíonn leis an gcraiceann nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H300+H330-0_tl}{{H300\,+\,\hskip\z@skip{}H330}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar marfach \'e seo má shlogtar nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H301+H311-0_tl}{{H301\,+\,\hskip\z@skip{}H311}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar tocsaineach má shlogtar \'e nó má theagmhaíonn leis an gcraiceann}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H301+H311+H331-0_tl}{{H301\,+\,\hskip\z@skip{}H311\,+\,\hskip\z@skip{}H331}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar tocsaineach má shlogtar, má theagmhaíonn leis an gcraiceann nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H301+H331-0_tl}{{H301\,+\,\hskip\z@skip{}H331}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar tocsaineach má shlogtar nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H302+H312-0_tl}{{H302\,+\,\hskip\z@skip{}H312}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar dochrach má shlogtar \'e nó má theagmhaíonn leis an gcraiceann}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H302+H312+H332-0_tl}{{H302\,+\,\hskip\z@skip{}H312\,+\,\hskip\z@skip{}H332}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar dochrach má shlogtar, má theagmhaíonn leis an gcraiceann nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H302+H332-0_tl}{{H302\,+\,\hskip\z@skip{}H332}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar dochrach má shlogtar nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H310+H330-0_tl}{{H310\,+\,\hskip\z@skip{}H330}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar marfach \'e seo má theagmhaíonn leis an gcraiceann nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H311+H331-0_tl}{{H311\,+\,\hskip\z@skip{}H331}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar tocsaineach má theagmhaíonn leis an gcraiceann nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H312+H332-0_tl}{{H312\,+\,\hskip\z@skip{}H332}{%
+  \__mhchem_hp_s:nnn{20110419}{Ábhar dochrach má theagmhaíonn leis an gcraiceann nó má ionanálaítear \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H400-0_tl}{{H400}{%
+  \__mhchem_hp_s:nnn{20081216}{An-tocsaineach don saol uisceach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H410-0_tl}{{H410}{%
+  \__mhchem_hp_s:nnn{20081216}{An-tocsaineach don saol uisceach, le h\'eifeachtaí fadtr\'eimhseacha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H411-0_tl}{{H411}{%
+  \__mhchem_hp_s:nnn{20081216}{Tocsaineach don saol uisceach, le h\'eifeachtaí fadtr\'eimhseacha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H412-0_tl}{{H412}{%
+  \__mhchem_hp_s:nnn{20081216}{Díobhálach don saol uisceach, le h\'eifeachtaí fadtr\'eimhseacha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H413-0_tl}{{H413}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e a bheith ina chúis le h\'eifeachtaí fadtr\'eimhseacha díobhálacha ar an saol uisceach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_H420-0_tl}{{H420}{%
+  \__mhchem_hp_s:nnn{20110419}{D\'eanann an t-ábhar seo díobháil don tsláinte phoiblí agus don chomhshaol trí ózón san atmaisf\'ear uachtarach a scriosadh}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH001-0_tl}{{EUH001}{%
+  \__mhchem_hp_s:nnn{20201017}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Pl\'eascach agus \'e tirim.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH006-0_tl}{{EUH006}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Pl\'eascach i dteagmháil le haer nó gan \'e.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH014-0_tl}{{EUH014}{%
+  \__mhchem_hp_s:nnn{20081216}{Imoibríonn go foirtil le huisce.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH018-0_tl}{{EUH018}{%
+  \__mhchem_hp_s:nnn{20081216}{Agus \'e á úsáid d'fh\'eadfaí meascán inadhainte/\hskip\z@skip{}pl\'eascach gaile-aeir a chruthú.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH018.0-0_tl}{{EUH018}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH018.1-0_tl}{{EUH018}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH018.2-0_tl}{{EUH018}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH019-0_tl}{{EUH019}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e sárocsaídí pl\'eascacha a chruthú.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH029-0_tl}{{EUH029}{%
+  \__mhchem_hp_s:nnn{20081216}{I dteagmháil le huisce scaoiltear gás tocsaineach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH031-0_tl}{{EUH031}{%
+  \__mhchem_hp_s:nnn{20081216}{I dteagmháil le haig\'eid scaoiltear gás tocsaineach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH032-0_tl}{{EUH032}{%
+  \__mhchem_hp_s:nnn{20081216}{I dteagmháil le haig\'eid scaoiltear gás an-tocsaineach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH044-0_tl}{{EUH044}{%
+  \__mhchem_hp_s:nnn{20081216}{Baol pl\'easctha arna th\'eamh i limist\'ear iata.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH059-0_tl}{{EUH059}{%
+  \__mhchem_hp_s:nnn{20110419}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Guaiseach don chiseal ózóin.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH066-0_tl}{{EUH066}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh tirimeacht chraicinn nó scoilteadh craicinn a bheith mar thoradh ar ilnochtadh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH070-0_tl}{{EUH070}{%
+  \__mhchem_hp_s:nnn{20081216}{Tocsaineach trí theagmháil leis an tsúil.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH071-0_tl}{{EUH071}{%
+  \__mhchem_hp_s:nnn{20081216}{Creimneach don chonair riospráide.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH201-0_tl}{{EUH201}{%
+  \__mhchem_hp_s:nnn{20081216}{Luaidhe ann. Níor chóir a úsáid ar dhromchlaí a d'fh\'eadfadh a bheith á gcogaint nó á sú ag leanaí.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH201A-0_tl}{{EUH201A}{%
+  \__mhchem_hp_s:nnn{20081216}{Rabhadh! Luaidhe ann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH202-0_tl}{{EUH202}{%
+  \__mhchem_hp_s:nnn{20081216}{Cianaicrioláit. Contúirt. Nascann craiceann agus súile laistigh de shoicindí. Coimeád as aimsiú leanaí.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH203-0_tl}{{EUH203}{%
+  \__mhchem_hp_s:nnn{20081216}{Cróimiam (VI) ann. D'fh\'eadfadh s\'e a bheith ina chúis le frithghníomh aill\'eirgeach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH204-0_tl}{{EUH204}{%
+  \__mhchem_hp_s:nnn{20081216}{Isicianaítí ann. D'fh\'eadfadh s\'e a bheith ina chúis le frithghníomh aill\'eirgeach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH205-0_tl}{{EUH205}{%
+  \__mhchem_hp_s:nnn{20081216}{Comhábhair eapocsacha ann. D'fh\'eadfadh s\'e a bheith ina chúis le frithghníomh aill\'eirgeach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH206-0_tl}{{EUH206}{%
+  \__mhchem_hp_s:nnn{20081216}{Rabhadh! Ná húsáid in \'eineacht le táirgí eile. D'fh\'eadfadh s\'e go scaoilfí gáis chontúirteacha (clóirín).}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH207-0_tl}{{EUH207}{%
+  \__mhchem_hp_s:nnn{20081216}{Rabhadh! Caidmiam ann. Cruthaítear múch chontúirteach le linn a úsáide. F\'each an fhaisn\'eis atá curtha ar fáil ag an monaróir. Cloígh leis na treoracha sábháilteachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH208-0_tl}{{EUH208}{%
+  \__mhchem_hp_s:nnn{20081216}{\noexpand\textless{}Ainm na substainte íograithe\noexpand\textgreater{} ann. D'fh\'eadfadh s\'e a bheith ina chúis le frithghníomh aill\'eirgeach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH208.0-0_tl}{{EUH208}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH208-1_tl}{{EUH208}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH209-0_tl}{{EUH209}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e \'eirí an-inadhainte agus \'e á úsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH209A-0_tl}{{EUH209A}{%
+  \__mhchem_hp_s:nnn{20081216}{D'fh\'eadfadh s\'e \'eirí inadhainte agus \'e á úsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH210-0_tl}{{EUH210}{%
+  \__mhchem_hp_s:nnn{20081216}{Bileog sonraí sábháilteachta ar fáil arna iarraidh sin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH211-0_tl}{{EUH211}{%
+  \__mhchem_hp_s:nnn{20211001}{Aire! D'fh\'eadfaí braoiníní guaiseacha inanálaithe a chruthú nuair a spraeáiltear an táirge seo. Ná hanálaigh sprae ná ceo.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH212-0_tl}{{EUH212}{%
+  \__mhchem_hp_s:nnn{20211001}{Aire! D'fh\'eadfaí deannach guaiseach inanálaithe a chruthú nuair a úsáidtear an táirge seo. Ná hanálaigh deannach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_EUH401-0_tl}{{EUH401}{%
+  \__mhchem_hp_s:nnn{20081216}{Chun priacail do shláinte an duine agus don chomhshaol a sheachaint, cloígh leis na treoracha maidir le húsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P101-0_tl}{{P101}{%
+  \__mhchem_hp_s:nnn{20081216}{Más gá comhairle liachta, bíodh coimeádán nó lip\'ead an táirge ina aice láimhe.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P102-0_tl}{{P102}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád as aimsiú leanaí.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P103-0_tl}{{P103}{%
+  \__mhchem_hp_s:nnn{20081216}{L\'eigh an lip\'ead roimh úsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P201-0_tl}{{P201}{%
+  \__mhchem_hp_s:nnn{20081216}{Faigh treoracha speisialta roimh úsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P202-0_tl}{{P202}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná láimhsigh go dtí go l\'eifear agus go dtuigfear gach ráiteas r\'eamhchúraim sábháilteachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P210-0_tl}{{P210}{%
+  \__mhchem_hp_s:nnn{20150601}{Coimeád ó theas, dromchlaí te, splancacha, lasair gan chosaint agus foinsí eile adhainte. Ná caitear tobac.}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád ó theas/\hskip\z@skip{}splancacha/\hskip\z@skip{}lasair gan chosaint/\hskip\z@skip{}dromchlaí te. -- Ná caitear tobac.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P211-0_tl}{{P211}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná spraeáil ar lasair gan chosaint ná ar fhoinse eile adhainte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P212-0_tl}{{P212}{%
+  \__mhchem_hp_s:nnn{20201017}{Seachain an t\'eamh i limist\'ear iata nó i gcás laghdú ar an dí-íogróir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220-0_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{20180301}{Coimeád glan ar \'eadaí agus ar ábhair indóite eile.}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád/\hskip\z@skip{}Stóráil glan ar \'eadaí/\hskip\z@skip{}\noexpand\textellipsis{}/\hskip\z@skip{}ábhair indóite.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.0-0_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.1.1-0_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.1.2-0_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.1-1_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.2.1-0_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.2.2-0_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P220.2-1_tl}{{P220}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P221-0_tl}{{P221}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D\'ean gach r\'eamhchúram chun meascadh le hábhair indóite a sheachaint\noexpand\textellipsis{}}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P221.0-0_tl}{{P221}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P221.1-0_tl}{{P221}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P221-1_tl}{{P221}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P222-0_tl}{{P222}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná ceadaigh teagmháil le haer.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P223-0_tl}{{P223}{%
+  \__mhchem_hp_s:nnn{20150601}{Ná bíodh aon teagmháil le huisce.}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná ceadaigh teagmháil de shaghas ar bith le huisce, mar gheall ar imoibriú foirtil agus splancthine a d'fh\'eadfadh a bheith ann.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P230-0_tl}{{P230}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád fliuchta le\noexpand\textellipsis{}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P230.0-0_tl}{{P230}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P230-1_tl}{{P230}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231-0_tl}{{P231}{%
+  \__mhchem_hp_s:nnn{20180301}{Láimhsigh agus stóráil an t-ábhar faoi thriathghás/\hskip\z@skip{}\noexpand\textellipsis{}}{%
+  \__mhchem_hp_s:nnn{20081216}{Láimhsigh faoi thriathghás.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231.0-0_tl}{{P231}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231.1-0_tl}{{P231}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231-1_tl}{{P231}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P232-0_tl}{{P232}{%
+  \__mhchem_hp_s:nnn{20081216}{Cosain ar thaise.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P233-0_tl}{{P233}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád an coimeádán dúnta go docht.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P234-0_tl}{{P234}{%
+  \__mhchem_hp_s:nnn{20180301}{Coimeád sa phacáistiú bunaidh amháin.}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád sa choimeádán bunaidh amháin.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P235-0_tl}{{P235}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád fionnuar \'e}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P240-0_tl}{{P240}{%
+  \__mhchem_hp_s:nnn{20081216}{Nasc an coimeádán agus an trealamh glactha leis an talamh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P241-0_tl}{{P241}{%
+  \__mhchem_hp_s:nnn{20180301}{Bain úsáid as trealamh pl\'eascdhíonach [leictreach/\hskip\z@skip{} aerála/\hskip\z@skip{}soilsiúcháin/\hskip\z@skip{}\noexpand\textellipsis{}].}{%
+  \__mhchem_hp_s:nnn{20081216}{Bain úsáid as trealamh pl\'eascdhíonach leictreach/\hskip\z@skip{}aerála/\hskip\z@skip{}soilsiúcháin/\hskip\z@skip{}\noexpand\textellipsis{}}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P241.0-0_tl}{{P241}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P241.1-0_tl}{{P241}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P241.2-0_tl}{{P241}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P241.3-0_tl}{{P241}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P241-1_tl}{{P241}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P242-0_tl}{{P242}{%
+  \__mhchem_hp_s:nnn{20180301}{Bain úsáid as uirlisí neamhspr\'eachta.}{%
+  \__mhchem_hp_s:nnn{20081216}{Bain úsáid as uirlisí neamhspr\'eachta amháin.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P243-0_tl}{{P243}{%
+  \__mhchem_hp_s:nnn{20180301}{D\'ean bearta in aghaidh díluchtú statach.}{%
+  \__mhchem_hp_s:nnn{20081216}{D\'ean bearta r\'eamhchúraim in aghaidh díluchtú statach.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P244-0_tl}{{P244}{%
+  \__mhchem_hp_s:nnn{20150601}{Coinnigh comhlaí agus feistis saor ó ola agus ó ghr\'eisc.}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád comhlaí brúlaghdaithe saor ó ghr\'eisc agus ó ola.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P250-0_tl}{{P250}{%
+  \__mhchem_hp_s:nnn{20180301}{Ná nocht do mheilt/\hskip\z@skip{}do thurraing/\hskip\z@skip{}do fhrithchuimilt/\hskip\z@skip{}\noexpand\textellipsis{} .}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná nocht do mheilt/\hskip\z@skip{}do thurraing/\hskip\z@skip{}\noexpand\textellipsis{}/\hskip\z@skip{}do fhrithchuimilt.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P250.0-0_tl}{{P250}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P250.1-0_tl}{{P250}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P250.2-0_tl}{{P250}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P250.3-0_tl}{{P250}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P250-1_tl}{{P250}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P251-0_tl}{{P251}{%
+  \__mhchem_hp_s:nnn{20150601}{Ná toll agus ná dóigh, fiú tar \'eis úsáide.}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeádán brúchóirithe: Ná toll agus ná dóigh, fiú tar \'eis úsáide.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná hanálaigh deannach/\hskip\z@skip{}múch/\hskip\z@skip{}gás/\hskip\z@skip{}ceo/\hskip\z@skip{}gala/\hskip\z@skip{}sprae.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.0-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.1-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.2-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.3-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.4-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.5-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P260.6-0_tl}{{P260}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{20081216}{Seachain deannach/\hskip\z@skip{}múch/\hskip\z@skip{}gás/\hskip\z@skip{}ceo/\hskip\z@skip{}gala/\hskip\z@skip{}sprae a análú.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.0-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.1-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.2-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.3-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.4-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.5-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P261.6-0_tl}{{P261}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P262-0_tl}{{P262}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná lig sna súile, ar an gcraiceann, ná ar \'eadaí.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P263-0_tl}{{P263}{%
+  \__mhchem_hp_s:nnn{20180301}{Seachain teagmháil le linn toirchis agus fad agus atá an chíoch á tabhairt.}{%
+  \__mhchem_hp_s:nnn{20081216}{Seachain teagmháil le linn toirchis/\hskip\z@skip{}agus an chíoch á tabhairt.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P264-0_tl}{{P264}{%
+  \__mhchem_hp_s:nnn{20081216}{Nigh \noexpand\textellipsis{} go lánchúramach tar \'eis láimhsithe.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P264.0-0_tl}{{P264}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P264-1_tl}{{P264}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P270-0_tl}{{P270}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná hith, ná hól agus ná caitear tobac agus an táirge seo á úsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P271-0_tl}{{P271}{%
+  \__mhchem_hp_s:nnn{20081216}{Úsáid amuigh faoin aer nó i limist\'ear dea-aerálaithe amháin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P272-0_tl}{{P272}{%
+  \__mhchem_hp_s:nnn{20081216}{Níor chóir \'eadaí \'eillithe oibre a ligean amach as an láthair oibre.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P273-0_tl}{{P273}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná scaoiltear amach sa chomhshaol.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P280-0_tl}{{P280}{%
+  \__mhchem_hp_s:nnn{20081216}{Caith lámhainní cosanta/\hskip\z@skip{}\'eadaí cosanta/\hskip\z@skip{}cosaint súile/\hskip\z@skip{}cosaint aghaidhe.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P280.0-0_tl}{{P280}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P280.1-0_tl}{{P280}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P280.2-0_tl}{{P280}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P280.3-0_tl}{{P280}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P280.4-0_tl}{{P280}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P281-0_tl}{{P281}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Bain úsáid as an trealamh cosanta pearsanta faoi mar a \'eilítear.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P282-0_tl}{{P282}{%
+  \__mhchem_hp_s:nnn{20180301}{Caith lámhainní inslithe fuachta agus aghaidhsciath nó cosaint súile.}{%
+  \__mhchem_hp_s:nnn{20081216}{Caith lámhainní inslithe fuachta/\hskip\z@skip{}aghaidhsciath/\hskip\z@skip{}cosaint súile.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P282.0-0_tl}{{P282}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P282.1-0_tl}{{P282}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P282.2-0_tl}{{P282}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P282.3-0_tl}{{P282}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P283-0_tl}{{P283}{%
+  \__mhchem_hp_s:nnn{20180301}{Caith \'eadaí dódhíonacha nó lasairmhoillitheacha.}{%
+  \__mhchem_hp_s:nnn{20081216}{Caith \'eadaí dódhíonacha/\hskip\z@skip{}lasairdhíonacha nó dómhoillitheacha/\hskip\z@skip{}lasairmhoillitheacha.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P284-0_tl}{{P284}{%
+  \__mhchem_hp_s:nnn{20150601}{[Mura leor an aeráil] caith cosaint riospráide.}{%
+  \__mhchem_hp_s:nnn{20081216}{Caith cosaint riospráide.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P285-0_tl}{{P285}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás aerála uireasaigh caith cosaint riospráide.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231+P232-0_tl}{{P231\,+\,\hskip\z@skip{}P232}{%
+  \__mhchem_hp_s:nnn{20180301}{Láimhsigh agus stóráil an t-ábhar faoi thriathghás/\hskip\z@skip{}\noexpand\textellipsis{}. Cosain ó thaise.}{%
+  \__mhchem_hp_s:nnn{20081216}{Láimhsigh faoi thriathghás. Cosain ó thaise.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231+P232.0-0_tl}{{P231\,+\,\hskip\z@skip{}P232}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231+P232.1-0_tl}{{P231\,+\,\hskip\z@skip{}P232}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P231+P232-1_tl}{{P231\,+\,\hskip\z@skip{}P232}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P235+P410-0_tl}{{P235\,+\,\hskip\z@skip{}P410}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád fionnuar. Cosain ó sholas na gr\'eine.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301-0_tl}{{P301}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ SHLOGTAR:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302-0_tl}{{P302}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P303-0_tl}{{P303}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN (nó le gruaig):}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P304-0_tl}{{P304}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ IONANÁLAÍTEAR:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P305-0_tl}{{P305}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS NA SÚILE:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P306-0_tl}{{P306}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LE h\'EADAÍ:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P307-0_tl}{{P307}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS nochta:}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308-0_tl}{{P308}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS nochta nó má mheastar a bheith nochtaithe:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P309-0_tl}{{P309}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS nochta nó má bhraitear tinn:}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P310-0_tl}{{P310}{%
+  \__mhchem_hp_s:nnn{20150601}{Cuir glao láithreach ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{}}{%
+  \__mhchem_hp_s:nnn{20081216}{Cuir glao láithreach ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P310.0-0_tl}{{P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P310.1-0_tl}{{P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P310.2-0_tl}{{P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P310-1_tl}{{P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P311-0_tl}{{P311}{%
+  \__mhchem_hp_s:nnn{20150601}{Cuir glao ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{}}{%
+  \__mhchem_hp_s:nnn{20081216}{Cuir glao ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P311.0-0_tl}{{P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P311.1-0_tl}{{P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P311.2-0_tl}{{P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P311-1_tl}{{P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P312-0_tl}{{P312}{%
+  \__mhchem_hp_s:nnn{20180301}{Cuir glao ar IONAD NIMHE/\hskip\z@skip{}dochtúir/\hskip\z@skip{}\noexpand\textellipsis{} má bhraitheann tú tinn.}{%
+  \__mhchem_hp_s:nnn{20150601}{Cuir glao ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{}mura mbraitheann tú go maith.}{%
+  \__mhchem_hp_s:nnn{20081216}{Cuir glao ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia má bhraitheann tú tinn.}{}}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P312.0-0_tl}{{P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P312.1-0_tl}{{P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P312.2-0_tl}{{P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P312-1_tl}{{P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P313-0_tl}{{P313}{%
+  \__mhchem_hp_s:nnn{20081216}{Faigh comhairle/\hskip\z@skip{}cúram liachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P314-0_tl}{{P314}{%
+  \__mhchem_hp_s:nnn{20081216}{Faigh comhairle/\hskip\z@skip{}cúram liachta má bhraitheann tú tinn.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P315-0_tl}{{P315}{%
+  \__mhchem_hp_s:nnn{20081216}{Faigh comhairle/\hskip\z@skip{}cúram liachta láithreach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P320-0_tl}{{P320}{%
+  \__mhchem_hp_s:nnn{20081216}{Tá s\'e práinneach go bhfaightear cóir leighis ar leith (f\'each \noexpand\textellipsis{} ar an lip\'ead seo).}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P320.0-0_tl}{{P320}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P320-1_tl}{{P320}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P320.nolabel-1_tl}{{P320.nolabel}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P321-0_tl}{{P321}{%
+  \__mhchem_hp_s:nnn{20081216}{Cóir liachta ar leith (f\'each \noexpand\textellipsis{} ar an lip\'ead seo).}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P321.0-0_tl}{{P321}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P321-1_tl}{{P321}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P321.nolabel-1_tl}{{P321.nolabel}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P322-0_tl}{{P322}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Bearta ar leith (f\'each \noexpand\textellipsis{} ar an lip\'ead seo).}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P322.0-0_tl}{{P322}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P322-1_tl}{{P322}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P322.nolabel-1_tl}{{P322.nolabel}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P330-0_tl}{{P330}{%
+  \__mhchem_hp_s:nnn{20081216}{Sruthlaítear an b\'eal.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P331-0_tl}{{P331}{%
+  \__mhchem_hp_s:nnn{20081216}{NÁ spreagtar urlacan.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P332-0_tl}{{P332}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás greannú craicinn:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P333-0_tl}{{P333}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás greannú nó grís craicinn:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P334-0_tl}{{P334}{%
+  \__mhchem_hp_s:nnn{20180301}{Tum in uisce fionnuar [nó cuir br\'eid fliuch air].}{%
+  \__mhchem_hp_s:nnn{20081216}{Tum in uisce fionnuar/\hskip\z@skip{}cuir br\'eid fliuch air.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P334.0-0_tl}{{P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P334.1-0_tl}{{P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P334.2-0_tl}{{P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P335-0_tl}{{P335}{%
+  \__mhchem_hp_s:nnn{20081216}{Glan cáithníní scaoilte den chraiceann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P336-0_tl}{{P336}{%
+  \__mhchem_hp_s:nnn{20081216}{Leáigh codanna sioctha le huisce alabhog. Ná cuimil an r\'eimse lena mbaineann.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P337-0_tl}{{P337}{%
+  \__mhchem_hp_s:nnn{20081216}{Má mhaireann an greannú súile:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P338-0_tl}{{P338}{%
+  \__mhchem_hp_s:nnn{20081216}{Tóg amach na tadhall-lionsaí, más ann dóibh agus más furasta \'e sin a dh\'eanamh. Lean den sruthlú.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P340-0_tl}{{P340}{%
+  \__mhchem_hp_s:nnn{20150601}{Tabhair an duine amach faoin aer úr agus coinnigh \'e i riocht ina bhf\'eadfadh s\'e anáil a tharraingt go r\'eidh.}{%
+  \__mhchem_hp_s:nnn{20081216}{Tabhair amach faoin aer an duine agus coimeád socair \'e, i riocht ina bhf\'eadfaidh s\'e anáil a tharraingt go r\'eidh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P341-0_tl}{{P341}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Más deacair don duine análú, tabhair amach faoin aer \'e agus coimeád socair \'e, i riocht ina bhf\'eadfaidh s\'e anáil a tharraingt go r\'eidh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P342-0_tl}{{P342}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás siomptóm riospráide:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P350-0_tl}{{P350}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Nigh go bog le neart gallúnaí agus uisce.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P351-0_tl}{{P351}{%
+  \__mhchem_hp_s:nnn{20081216}{Sruthlaítear go faichilleach le huisce ar feadh roinnt nóim\'ead.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P352-0_tl}{{P352}{%
+  \__mhchem_hp_s:nnn{20150601}{Nigh le neart uisce/\hskip\z@skip{}\noexpand\textellipsis{}}{%
+  \__mhchem_hp_s:nnn{20081216}{Nigh le neart gallúnaí agus uisce.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P352.0-0_tl}{{P352}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P352.1-0_tl}{{P352}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P352-1_tl}{{P352}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P353-0_tl}{{P353}{%
+  \__mhchem_hp_s:nnn{20180301}{Sruthlaítear an craiceann le huisce [nó glac cithfholcadh].}{%
+  \__mhchem_hp_s:nnn{20081216}{Sruthlaítear an craiceann le huisce/\hskip\z@skip{}glac cithfholcadh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P353.0-0_tl}{{P353}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P353.1-0_tl}{{P353}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P353.2-0_tl}{{P353}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P360-0_tl}{{P360}{%
+  \__mhchem_hp_s:nnn{20081216}{Sruthlaítear \'eadaí \'eillithe agus an craiceann láithreach le neart uisce sula mbaineann an duine na h\'eadaí de.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P361-0_tl}{{P361}{%
+  \__mhchem_hp_s:nnn{20081216}{Bain díot láithreach na h\'eadaí \'eillithe go l\'eir.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P362-0_tl}{{P362}{%
+  \__mhchem_hp_s:nnn{20150601}{Bain díot aon \'eadaí \'eillithe.}{%
+  \__mhchem_hp_s:nnn{20081216}{Bain díot láithreach na h\'eadaí \'eillithe go l\'eir agus nigh iad sula nd\'eanfar iad a athúsáid.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P363-0_tl}{{P363}{%
+  \__mhchem_hp_s:nnn{20081216}{Nigh \'eadaí \'eillithe sula nd\'eanfar iad a athúsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P364-0_tl}{{P364}{%
+  \__mhchem_hp_s:nnn{20150601}{Agus nigh iad sula nd\'eanfar iad a athúsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370-0_tl}{{P370}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás dóiteáin:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P371-0_tl}{{P371}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás mórdhóiteáin agus má tá cainníochtaí móra i gceist:}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P372-0_tl}{{P372}{%
+  \__mhchem_hp_s:nnn{20180301}{Baol pl\'easctha.}{%
+  \__mhchem_hp_s:nnn{20081216}{Baol pl\'easctha i gcás dóiteáin.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P373-0_tl}{{P373}{%
+  \__mhchem_hp_s:nnn{20081216}{NÁ D\'EAN an dóiteán a chomhrac má shroicheann s\'e pl\'eascáin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P374-0_tl}{{P374}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20081216}{D\'ean na gnáth-r\'eamhchúraimí chun an dóiteán a chomhrac gan a bheith níos gaire dó ná mar atá r\'easúnta.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P375-0_tl}{{P375}{%
+  \__mhchem_hp_s:nnn{20081216}{T\'eigh i gcianghleic leis an dóiteán mar gheall ar an mbaol pl\'easctha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P376-0_tl}{{P376}{%
+  \__mhchem_hp_s:nnn{20081216}{Cuir stop leis an sceitheadh má tá s\'e sábháilte \'e sin a dh\'eanamh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P377-0_tl}{{P377}{%
+  \__mhchem_hp_s:nnn{20081216}{Tine gháis ag sceitheadh: Ná múch, mura i ndán agus gur f\'eidir stop a chur leis an sceitheadh go sábháilte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P378-0_tl}{{P378}{%
+  \__mhchem_hp_s:nnn{20081216}{Úsáid \noexpand\textellipsis{} le haghaidh múchta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P378.0-0_tl}{{P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P378-1_tl}{{P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P380-0_tl}{{P380}{%
+  \__mhchem_hp_s:nnn{20081216}{Aslonnaigh gach duine as an limist\'ear.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P381-0_tl}{{P381}{%
+  \__mhchem_hp_s:nnn{20180301}{I gcás sceite, díothaigh gach foinse adhainte.}{%
+  \__mhchem_hp_s:nnn{20081216}{Díothaigh gach foinse adhainte, má tá s\'e sábháilte \'e sin a dh\'eanamh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P390-0_tl}{{P390}{%
+  \__mhchem_hp_s:nnn{20081216}{Ionsúigh doirteadh chun damáiste d'ábhar a chosc.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P391-0_tl}{{P391}{%
+  \__mhchem_hp_s:nnn{20081216}{Bailigh doirteadh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P310-0_tl}{{P301\,+\,\hskip\z@skip{}P310}{%
+  \__mhchem_hp_s:nnn{20150601}{MÁ SHLOGTAR: Cuir glao láithreach ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{}}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ SHLOGTAR: Cuir glao láithreach ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P310.0-0_tl}{{P301\,+\,\hskip\z@skip{}P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P310.1-0_tl}{{P301\,+\,\hskip\z@skip{}P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P310.2-0_tl}{{P301\,+\,\hskip\z@skip{}P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P310-1_tl}{{P301\,+\,\hskip\z@skip{}P310}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P312-0_tl}{{P301\,+\,\hskip\z@skip{}P312}{%
+  \__mhchem_hp_s:nnn{20180301}{MÁ SHLOGTAR: Cuir glao ar IONAD NIMHE/\hskip\z@skip{}dochtúir/\hskip\z@skip{}\noexpand\textellipsis{} má bhraitheann tú tinn.}{%
+  \__mhchem_hp_s:nnn{20150601}{MÁ SHLOGTAR: Cuir glao ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{} mura mbraitheann tú go maith.}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ SHLOGTAR: Cuir glao ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia má bhraitheann tú tinn.}{}}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P312.0-0_tl}{{P301\,+\,\hskip\z@skip{}P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P312.1-0_tl}{{P301\,+\,\hskip\z@skip{}P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P312.2-0_tl}{{P301\,+\,\hskip\z@skip{}P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P312-1_tl}{{P301\,+\,\hskip\z@skip{}P312}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P301+P330+P331-0_tl}{{P301\,+\,\hskip\z@skip{}P330\,+\,\hskip\z@skip{}P331}{%
+  \__mhchem_hp_s:nnn{20180301}{MÁ SHLOGTAR: Sruthlaítear an b\'eal. NÁ spreagtar urlacan.}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ SHLOGTAR: sruthlaítear an b\'eal. NÁ d\'ean urlacan a spreagadh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P334-0_tl}{{P302\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{20180301}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN: Tum in uisce fionnuar nó cuir br\'eid fliuch air.}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN: Tum in uisce fionnuar/\hskip\z@skip{}cuir br\'eid fliuch air.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P334.0-0_tl}{{P302\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P334.1-0_tl}{{P302\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P334.2-0_tl}{{P302\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P335+P334-0_tl}{{P302\,+\,\hskip\z@skip{}P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{20180301}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN: Glan cáithníní scaoilte den chraiceann. Tum in uisce fionnuar [nó cuir br\'eid fliuch air].}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P335+P334.0-0_tl}{{P302\,+\,\hskip\z@skip{}P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P335+P334.1-0_tl}{{P302\,+\,\hskip\z@skip{}P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P335+P334.2-0_tl}{{P302\,+\,\hskip\z@skip{}P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P350-0_tl}{{P302\,+\,\hskip\z@skip{}P350}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN: Nigh go bog le neart gallúnaí agus uisce.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P352-0_tl}{{P302\,+\,\hskip\z@skip{}P352}{%
+  \__mhchem_hp_s:nnn{20150601}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN: Nigh le neart gallúnaí agus uisce \'e.}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN: Nigh le neart gallúnaí agus uisce.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P352.0-0_tl}{{P302\,+\,\hskip\z@skip{}P352}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P352.1-0_tl}{{P302\,+\,\hskip\z@skip{}P352}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P302+P352-1_tl}{{P302\,+\,\hskip\z@skip{}P352}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P303+P361+P353-0_tl}{{P303\,+\,\hskip\z@skip{}P361\,+\,\hskip\z@skip{}P353}{%
+  \__mhchem_hp_s:nnn{20180301}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN (nó le gruaig): Bain díot láithreach na h\'eadaí \'eillithe go l\'eir. Sruthlaítear an craiceann le huisce [nó glac cithfholcadh].}{%
+  \__mhchem_hp_s:nnn{20150601}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN (nó le gruaig): Bain díot láithreach na h\'eadaí \'eillithe go l\'eir. Sruthlaigh an craiceann le huisce/\hskip\z@skip{}glac cithfholcadh.}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS AN gCRAICEANN(nó le gruaig): Bain díot láithreach na h\'eadaí \'eillithe go l\'eir. Sruthlaítear an craiceann le huisce/\hskip\z@skip{}glac cithfholcadh.}{}}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P303+P361+P353.0-0_tl}{{P303\,+\,\hskip\z@skip{}P361\,+\,\hskip\z@skip{}P353}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P303+P361+P353.1-0_tl}{{P303\,+\,\hskip\z@skip{}P361\,+\,\hskip\z@skip{}P353}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P303+P361+P353.2-0_tl}{{P303\,+\,\hskip\z@skip{}P361\,+\,\hskip\z@skip{}P353}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P304+P340-0_tl}{{P304\,+\,\hskip\z@skip{}P340}{%
+  \__mhchem_hp_s:nnn{20150601}{MÁ IONANÁILTEAR: Tabhair an duine amach faoin aer úr agus coinnigh \'e compordach.}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ IONÁLAÍTEAR, tabhair amach faoin aer an duine agus coimeád socair \'e, i riocht ina bhf\'eadfaidh s\'e anáil a tharraingt go r\'eidh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P304+P341-0_tl}{{P304\,+\,\hskip\z@skip{}P341}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{MÁ TH\'EANN AN TÁIRGE SEO LE hANÁIL DUINE, tabhair amach faoin aer an duine agus coimeád socair \'e, i riocht ina bhf\'eadfaidh s\'e anáil a tharraingt go r\'eidh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P305+P351+P338-0_tl}{{P305\,+\,\hskip\z@skip{}P351\,+\,\hskip\z@skip{}P338}{%
+  \__mhchem_hp_s:nnn{20180301}{I gCÁS TEAGMHÁLA LEIS NA SÚILE: Sruthlaítear go cúramach le huisce ar feadh roinnt nóim\'ead. Tóg amach na tadhall-lionsaí, más ann dóibh agus más furasta \'e sin a dh\'eanamh. Lean den sruthlú.}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LEIS NA SÚILE: Sruthlaigh go cúramach le huisce ar feadh roinnt nóim\'ead. Tóg amach na tadhall-lionsaí, más ann dóibh agus más furasta. Lean den sruthlú.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P306+P360-0_tl}{{P306\,+\,\hskip\z@skip{}P360}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS TEAGMHÁLA LE h\'EADAÍ: sruthlaítear \'eadaí \'eillithe agus an craiceann láithreach le neart uisce sula nd\'eantar na h\'eadaí a bhaint den duine.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P307+P311-0_tl}{{P307\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gCÁS nochta: Cuir glao ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308+P311-0_tl}{{P308\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{20150601}{I gCÁS nochta nó má mheastar a bheith nochtaithe: Cuir glao ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308+P311.0-0_tl}{{P308\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308+P311.1-0_tl}{{P308\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308+P311.2-0_tl}{{P308\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308+P311-1_tl}{{P308\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P308+P313-0_tl}{{P308\,+\,\hskip\z@skip{}P313}{%
+  \__mhchem_hp_s:nnn{20081216}{I gC\`AS nochta nó má mheastar a bheith nochtaithe: Faigh comhairle/\hskip\z@skip{}cúram liachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P309+P311-0_tl}{{P309\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{20150601}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gC\`AS nochta nó má bhraitear tinn: Cuir glao ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P332+P313-0_tl}{{P332\,+\,\hskip\z@skip{}P313}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás greannú craicinn: Faigh comhairle/\hskip\z@skip{}cúram liachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P333+P313-0_tl}{{P333\,+\,\hskip\z@skip{}P313}{%
+  \__mhchem_hp_s:nnn{20081216}{Má tharlaíonn greannú nó gríos craicinn: Faigh comhairle/\hskip\z@skip{}cúram liachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P335+P334-0_tl}{{P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Scuab cáithníní scaoilte den chraiceann. Tum in uisce fionnuar/\hskip\z@skip{}cuir br\'eid fliuch air.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P335+P334.0-0_tl}{{P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P335+P334.1-0_tl}{{P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P335+P334.2-0_tl}{{P335\,+\,\hskip\z@skip{}P334}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P336+P315-0_tl}{{P336\,+\,\hskip\z@skip{}P315}{%
+  \__mhchem_hp_s:nnn{20180301}{Leáigh codanna sioctha le huisce alabhog. Ná cuimil an r\'eimse lena mbaineann. Faigh comhairle/\hskip\z@skip{}cúram liachta láithreach.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P337+P313-0_tl}{{P337\,+\,\hskip\z@skip{}P313}{%
+  \__mhchem_hp_s:nnn{20081216}{Má mhaireann an greannú súile: Faigh comhairle/\hskip\z@skip{}cúram liachta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P342+P311-0_tl}{{P342\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{20150601}{I gCÁS siomtóm riospráide: Cuir glao ar IONAD NIMHE/\hskip\z@skip{}ar dhoctúir/\hskip\z@skip{}\noexpand\textellipsis{}}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás siomptóm riospráide: Cuir glao ar IONAD NIMHE nó ar dhoctúir/\hskip\z@skip{}lia.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P342+P311.0-0_tl}{{P342\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P342+P311.1-0_tl}{{P342\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P342+P311.2-0_tl}{{P342\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P342+P311-1_tl}{{P342\,+\,\hskip\z@skip{}P311}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P361+P364-0_tl}{{P361\,+\,\hskip\z@skip{}P364}{%
+  \__mhchem_hp_s:nnn{20150601}{Bain díot láithreach na h\'eadaí \'eillithe go l\'eir agus nigh iad roimh iad a athúsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P362+P364-0_tl}{{P362\,+\,\hskip\z@skip{}P364}{%
+  \__mhchem_hp_s:nnn{20150601}{Bain díot aon \'eadaí \'eillithe agus nigh iad roimh iad a athúsáid.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P372+P380+P373-0_tl}{{P370\,+\,\hskip\z@skip{}P372\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P373}{%
+  \__mhchem_hp_s:nnn{20180301}{I gcás dóiteáin: Baol pl\'easctha. Aslonnaigh gach duine as an limist\'ear. NÁ D\'EAN an dóiteán a chomhrac má shroicheann s\'e pl\'eascáin.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P376-0_tl}{{P370\,+\,\hskip\z@skip{}P376}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás dóiteáin: Cuir stop leis an sceitheadh má tá s\'e sábháilte \'e sin a dh\'eanamh.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P378-0_tl}{{P370\,+\,\hskip\z@skip{}P378}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás dóiteáin: Úsáid \noexpand\textellipsis{} le haghaidh múchta.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P378.0-0_tl}{{P370\,+\,\hskip\z@skip{}P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P378-1_tl}{{P370\,+\,\hskip\z@skip{}P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P380-0_tl}{{P370\,+\,\hskip\z@skip{}P380}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás dóiteáin: Aslonnaigh gach duine as an limist\'ear.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P380+P375-0_tl}{{P370\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P375}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás dóiteáin: Aslonnaigh gach duine as an limist\'ear. T\'eigh i gcianghleic leis an dóiteán mar gheall ar an mbaol pl\'easctha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P380+P375+P378-0_tl}{{P370\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P375\,+\,\hskip\z@skip{}P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P380+P375+P378.0-0_tl}{{P370\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P375\,+\,\hskip\z@skip{}P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P380+P375+P378-1_tl}{{P370\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P375\,+\,\hskip\z@skip{}P378}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P371+P380+P375-0_tl}{{P371\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P375}{%
+  \__mhchem_hp_s:nnn{20081216}{I gcás mórdhóiteáin agus mórchainníochtaí: Aslonnaigh gach duine as an limist\'ear. T\'eigh i gcianghleic leis an dóiteán mar gheall ar an mbaol pl\'easctha.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P401-0_tl}{{P401}{%
+  \__mhchem_hp_s:nnn{20180301}{Stóráil i gcomhr\'eir le\noexpand\textellipsis{} .}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil \noexpand\textellipsis{}}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P401.0-0_tl}{{P401}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P401-1_tl}{{P401}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P402-0_tl}{{P402}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil in áit thirim.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P403-0_tl}{{P403}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil in áit dhea-aeráilte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P404-0_tl}{{P404}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil i gcoimeádán iata.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P405-0_tl}{{P405}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil faoi ghlas.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P406-0_tl}{{P406}{%
+  \__mhchem_hp_s:nnn{20180301}{Stóráil i gcoimeádán/\hskip\z@skip{} \noexpand\textellipsis{} frithchreimneach le líneáil fhrithchreimneach laistigh.}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil i gcoimeádán \noexpand\textellipsis{} frithchreimneach/\hskip\z@skip{}\noexpand\textellipsis{} le líneáil frithchreimneach laistigh.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P406.0-0_tl}{{P406}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P406.1-0_tl}{{P406}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P406-1_tl}{{P406}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P407-0_tl}{{P407}{%
+  \__mhchem_hp_s:nnn{20180301}{Coimeád bearna aeir idir cruacha nó idir paill\'eid.}{%
+  \__mhchem_hp_s:nnn{20081216}{Coimeád bearna aeir idir chruacha/\hskip\z@skip{}phaill\'eid.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P410-0_tl}{{P410}{%
+  \__mhchem_hp_s:nnn{20081216}{Cosain ó sholas na gr\'eine.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411-0_tl}{{P411}{%
+  \__mhchem_hp_s:nnn{20101201}{Stóráil ag teocht nach airde ná \noexpand\textellipsis{}\,\noexpand\textdegree{}C/\hskip\z@skip{}\noexpand\textellipsis{}\,\noexpand\textdegree{}F.}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil ag teocht nach airde ná \noexpand\textellipsis{}\,\noexpand\textdegree{}C/\hskip\z@skip{}\noexpand\textellipsis{}\,\noexpand\textdegree{}F.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411.0-0_tl}{{P411}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411.1-1_tl}{{P411}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411.2-1_tl}{{P411}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P412-0_tl}{{P412}{%
+  \__mhchem_hp_s:nnn{20101201}{Ná nocht do theocht níos airde ná 50\,\noexpand\textdegree{}C/\hskip\z@skip{}122\,\noexpand\textdegree{}F.}{%
+  \__mhchem_hp_s:nnn{20081216}{Ná nocht do theocht níos airde ná 50\,\noexpand\textdegree{}C/\hskip\z@skip{}122\,\noexpand\textdegree{}F.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P412.0-0_tl}{{P412}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P412.1-0_tl}{{P412}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P412.2-0_tl}{{P412}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P413-0_tl}{{P413}{%
+  \__mhchem_hp_s:nnn{20101201}{Stóráil bulcmhaiseanna os cionn \noexpand\textellipsis{}\,kg/\hskip\z@skip{}\noexpand\textellipsis{} lb ag teocht nach airde ná \noexpand\textellipsis{}\,\noexpand\textdegree{}C/\hskip\z@skip{}\noexpand\textellipsis{}\,\noexpand\textdegree{}F.}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil bulcmhaiseanna os cionn \noexpand\textellipsis{}\,kg/\hskip\z@skip{}\noexpand\textellipsis{} lb ag teocht nach airde ná \noexpand\textellipsis{}\,\noexpand\textdegree{}C/\hskip\z@skip{}\noexpand\textellipsis{}\,\noexpand\textdegree{}F.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P413.0-0_tl}{{P413}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P413.1-2_tl}{{P413}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P413.2-2_tl}{{P413}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P420-0_tl}{{P420}{%
+  \__mhchem_hp_s:nnn{20180301}{Stóráil as f\'ein.}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil glan ar ábhair eile.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P422-0_tl}{{P422}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil an t-ábhar faoi \noexpand\textellipsis{}}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P422.0-0_tl}{{P422}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P422-1_tl}{{P422}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P402+P404-0_tl}{{P402\,+\,\hskip\z@skip{}P404}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil in áit thirim. Stóráil i gcoimeádán iata.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P403+P233-0_tl}{{P403\,+\,\hskip\z@skip{}P233}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil in áit dhea-aeráilte. Coimeád an coimeádán dúnta go docht.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P403+P235-0_tl}{{P403\,+\,\hskip\z@skip{}P235}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil in áit dhea-aeráilte. Coimeád fionnuar.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P410+P403-0_tl}{{P410\,+\,\hskip\z@skip{}P403}{%
+  \__mhchem_hp_s:nnn{20081216}{Cosain ó sholas na gr\'eine. Stóráil in áit dhea-aeráilte.}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P410+P412-0_tl}{{P410\,+\,\hskip\z@skip{}P412}{%
+  \__mhchem_hp_s:nnn{20101201}{Cosain ó sholas na gr\'eine. Ná nocht do theocht níos airde ná 50\,\noexpand\textdegree{}C/\hskip\z@skip{}122\,\noexpand\textdegree{}F.}{%
+  \__mhchem_hp_s:nnn{20081216}{Cosain ó sholas na gr\'eine. Ná nocht do theocht níos airde ná 50\,\noexpand\textdegree{}C/\hskip\z@skip{}122\,\noexpand\textdegree{}F.}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P410+P412.0-0_tl}{{P410\,+\,\hskip\z@skip{}P412}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P410+P412.1-0_tl}{{P410\,+\,\hskip\z@skip{}P412}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P410+P412.2-0_tl}{{P410\,+\,\hskip\z@skip{}P412}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411+P235-0_tl}{{P411\,+\,\hskip\z@skip{}P235}{%
+  \__mhchem_hp_s:nnn{20180301}{}{%
+  \__mhchem_hp_s:nnn{20101201}{Stóráil ag teocht nach airde ná \noexpand\textellipsis{}\,\noexpand\textdegree{}C/\hskip\z@skip{}\noexpand\textellipsis{}\,\noexpand\textdegree{}F. Coimeád fionnuar.}{%
+  \__mhchem_hp_s:nnn{20081216}{Stóráil ag teocht nach airde ná \noexpand\textellipsis{}\,\noexpand\textdegree{}C/\hskip\z@skip{}\noexpand\textellipsis{}\,\noexpand\textdegree{}F. Coimeád fionnuar.}{}}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411+P235.0-0_tl}{{P411\,+\,\hskip\z@skip{}P235}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411+P235.1-1_tl}{{P411\,+\,\hskip\z@skip{}P235}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P411+P235.2-1_tl}{{P411\,+\,\hskip\z@skip{}P235}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P501-0_tl}{{P501}{%
+  \__mhchem_hp_s:nnn{20081216}{Diúscair an t-ábhar/\hskip\z@skip{}an coimeádán i \noexpand\textellipsis{}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P501.0-0_tl}{{P501}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P501.0-1_tl}{{P501}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P501.1-1_tl}{{P501}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P501.2-1_tl}{{P501}{%
+  \__mhchem_hp_s:nnn{00000000}{\msg_error:nnn{hpstatement}{undefined-enhancement}}{}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P502-0_tl}{{P502}{%
+  \__mhchem_hp_s:nnn{20180301}{T\'eigh i dteagmháil leis an monaróir nó leis an soláthróir chun faisn\'eis a fháil faoi aisghabháil nó athchúrsáil.}{%
+  \__mhchem_hp_s:nnn{20110419}{F\'each an fhaisn\'eis ón monaróir/\hskip\z@skip{}soláthróir maidir le haisghabháil/\hskip\z@skip{}athchúrsáil}{}}}}%
+\tl_gset:cn{g__mhchem_hp_ga_P370+P380+P375[+P378]-0_tl}{{P370\,+\,\hskip\z@skip{}P380\,+\,\hskip\z@skip{}P375[\,+\,\hskip\z@skip{}P378]}{%
+  \__mhchem_hp_s:nnn{20180301}{I gcás dóiteáin: Aslonnaigh gach duine as an limist\'ear. T\'eigh i gcianghleic leis an dóiteán mar gheall ar an mbaol pl\'easctha. [Úsáid \noexpand\textellipsis{} le haghaidh múchta].}{}}}%
+%
+\group_end:
+\ExplSyntaxOff

@@ -1,0 +1,31 @@
+name textcase
+category Package
+revision 67755
+shortdesc Case conversion ignoring mathematics, etc
+longdesc The textcase package offers commands \MakeTextUppercase and
+longdesc \MakeTextLowercase which are similar to the standard
+longdesc \MakeUppercase and \MakeLowercase, but they do not change the
+longdesc case of any sections of mathematics, or the arguments of \cite,
+longdesc \label and \ref commands within the argument. A further command
+longdesc \NoCaseChange does nothing but suppress case change within its
+longdesc argument, so to force uppercase of a section including an
+longdesc environment, one might say:
+longdesc \MakeTextUppercase{...\NoCaseChange{\begin{foo}}
+longdesc ...\NoCaseChange{\end{foo}}...} In current LaTeX this package
+longdesc is obsolete. You can use the standard \MakeUppercase and
+longdesc \MakeLowercase, but it defines legacy names \MakeTextUppercase
+longdesc and \MakeTextLowercase.
+containersize 1860
+containerchecksum 1a4a29b33270f5100109f42f4caf529d3203a6bd1a934a06fba6ed3ed082f0bbdeecfeb7ff158182c88ca7d724422c83be2d170bba78738cb7417fecb13f65da
+doccontainersize 225528
+doccontainerchecksum c8b42e576dc6458441703344724bb1ee8f441e79da8d59b1ccb0b6280de878ae65ac48e628f3230ee2094ee285a58636a6e37c29e4458d5f164c36cf4ec93d6c
+srccontainersize 5452
+srccontainerchecksum 1e7e5e16c982ae65aab5cdb4c83e770336dc38833f6027de701114da45c0b45a1ef21dd3096de3933401a13222438a533397661d5654acb991c0ef5d6a8c29ee
+runfiles size=1
+ texmf-dist/tex/latex/textcase/textcase.sty
+catalogue-contact-bugs https://github.com/davidcarlisle/dpctex/issues
+catalogue-contact-repository https://github.com/davidcarlisle/dpctex
+catalogue-ctan /macros/latex/contrib/textcase
+catalogue-license lppl
+catalogue-topics macro-supp
+catalogue-version 1.04

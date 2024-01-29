@@ -1,0 +1,37 @@
+name hyperxmp
+category Package
+revision 68251
+shortdesc Embed XMP metadata within a LaTeX document
+longdesc XMP (eXtensible Metadata Platform) is a mechanism proposed by
+longdesc Adobe for embedding document metadata within the document
+longdesc itself. The metadata is designed to be easy to extract, even by
+longdesc programs that are oblivious to the document's file format. Most
+longdesc of Adobe's applications store XMP metadata when saving files.
+longdesc Now, with the hyperxmp package, it is trivial for LaTeX
+longdesc document authors to store XMP metadata in their documents as
+longdesc well. The package integrates seamlessly with hyperref and
+longdesc requires virtually no modifications to documents that already
+longdesc exploit hyperref's mechanisms for specifying PDF metadata. The
+longdesc current version of hyperxmp can embed the following metadata as
+longdesc XMP: title, authors, primary author's title or position,
+longdesc metadata writer, subject/summary, keywords, copyright, license
+longdesc URL, document base URL, document identifier and instance
+longdesc identifier, language, source file name, PDF generating tool,
+longdesc PDF version, and contact telephone number/postal address/email
+longdesc address/URL. Hyperxmp currently embeds XMP only within PDF
+longdesc documents; it is compatible with pdfLaTeX, XeLaTeX,
+longdesc LaTeX+dvipdfm, and LaTeX+dvips+ps2pdf.
+depend hyperxmp.ARCH
+containersize 15176
+containerchecksum 79dfcb70b4df1be8ada345507f0cece0b36c38f57c1b5e92fa008af3ceb5209c5df10d9144a24af4473a2f640d2adb59054cd9985f762b9b6cf7db45ed99c4cf
+doccontainersize 1165076
+doccontainerchecksum b56e9ef7beb7502ba2e952267fddeb3a26597e9e5193ed66369dc3c78f5a08d34b5fca0685cab8f6ec67e12167a1aca309a18b85073b8e9c497641cf062be6b1
+srccontainersize 157676
+srccontainerchecksum 02ca43c9809c347a6db12e0a8ffb2ec96db3b27d4c89ceea10091235c6b411de38d76f976a08d139bad0b0efa0b181e2e2fe5e2edd8cdf41ac5043fcc8758bbe
+runfiles size=18
+ texmf-dist/scripts/hyperxmp/hyperxmp-add-bytecount.pl
+ texmf-dist/tex/latex/hyperxmp/hyperxmp.sty
+catalogue-ctan /macros/latex/contrib/hyperxmp
+catalogue-license lppl1.3c
+catalogue-topics pdf-feat
+catalogue-version 5.12

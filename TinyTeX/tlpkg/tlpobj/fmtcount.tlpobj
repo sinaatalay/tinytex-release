@@ -1,0 +1,47 @@
+name fmtcount
+category Package
+revision 53912
+shortdesc Display the value of a LaTeX counter in a variety of formats
+longdesc The package provides commands that display the value of a LaTeX
+longdesc counter in a variety of formats (ordinal, text, hexadecimal,
+longdesc decimal, octal, binary etc). The package offers some
+longdesc multilingual support; configurations for use in English (both
+longdesc British and American usage), French (including Belgian and
+longdesc Swiss variants), German, Italian, Portuguese and Spanish
+longdesc documents are provided. This package was originally provided as
+longdesc part of the author's datetime package, but is now distributed
+longdesc separately.
+containersize 26612
+containerchecksum ec5e10be2b93adbfa0e1ac710c7df37457e8d14dc5c7fe1cd13e062f136c63bd20a3e42d57c237fb4ae5c1be936e1d821d0a6568ca0c22b41948660f0848da43
+doccontainersize 400372
+doccontainerchecksum fa0955c7d08dca99d3323b9cf364edd8b4b305723a3fd3ae38687c6473ea2af3593c47384a61feff0071199b909e1424d422eed3864866b28c7d27b1f42c3994
+srccontainersize 48732
+srccontainerchecksum 1325ecfee60e7b602e5ca2fffa2b95a4ad11d04b5e986413af57da19cb75e2a268356f33ad64355511d526ed144e14e2abab4b84e5ec5e4faae122eff9914104
+runfiles size=71
+ texmf-dist/scripts/fmtcount/fmtcount.perl
+ texmf-dist/tex/latex/fmtcount/fc-UKenglish.def
+ texmf-dist/tex/latex/fmtcount/fc-USenglish.def
+ texmf-dist/tex/latex/fmtcount/fc-american.def
+ texmf-dist/tex/latex/fmtcount/fc-brazilian.def
+ texmf-dist/tex/latex/fmtcount/fc-british.def
+ texmf-dist/tex/latex/fmtcount/fc-english.def
+ texmf-dist/tex/latex/fmtcount/fc-francais.def
+ texmf-dist/tex/latex/fmtcount/fc-french.def
+ texmf-dist/tex/latex/fmtcount/fc-frenchb.def
+ texmf-dist/tex/latex/fmtcount/fc-german.def
+ texmf-dist/tex/latex/fmtcount/fc-germanb.def
+ texmf-dist/tex/latex/fmtcount/fc-italian.def
+ texmf-dist/tex/latex/fmtcount/fc-ngerman.def
+ texmf-dist/tex/latex/fmtcount/fc-ngermanb.def
+ texmf-dist/tex/latex/fmtcount/fc-portuges.def
+ texmf-dist/tex/latex/fmtcount/fc-portuguese.def
+ texmf-dist/tex/latex/fmtcount/fc-spanish.def
+ texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+ texmf-dist/tex/latex/fmtcount/fcprefix.sty
+ texmf-dist/tex/latex/fmtcount/fmtcount.sty
+catalogue-contact-bugs https://github.com/nlct/fmtcount/issues
+catalogue-contact-repository https://github.com/nlct/fmtcount
+catalogue-ctan /macros/latex/contrib/fmtcount
+catalogue-license lppl1.3
+catalogue-topics numbers
+catalogue-version 3.07
