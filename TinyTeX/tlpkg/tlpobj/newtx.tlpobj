@@ -1,6 +1,6 @@
 name newtx
 category Package
-revision 69381
+revision 69756
 shortdesc Alternative uses of the TX fonts, with improved metrics
 longdesc The bundle splits txfonts.sty (from the TX fonts distribution)
 longdesc into two independent packages, newtxtext.sty and newtxmath.sty,
@@ -14,11 +14,11 @@ longdesc garamondx package, thus offering a garamond-alike
 longdesc text-with-maths combination.
 depend kastrup
 execute addMap newtx.map
-containersize 6054248
-containerchecksum 116c8192b67b93a6dcac6fd296141b5b5bba89b41c94cb15ee5644ef9c9b3647dfcb9703a002c9433b8badbbd117cad8fd0565090ae7ee097cb65d7e06b0ae60
-doccontainersize 969452
-doccontainerchecksum 6ac40ed19b45a5a99fb854469605242cc1efa098563a9653bbebe994e79767b465d182f0bef6a03961756fa8670677deb033a8d6ad747e54cf04c62634fd0388
-runfiles size=4469
+containersize 6054376
+containerchecksum f9dc7850bdac974ce905beaf163f19b433e692da4b9372b20d703715bcbe762761dfa5e07de60895101cf69841e5f25b7f0a3c790ffbd7e988f9252919dae2ec
+doccontainersize 969884
+doccontainerchecksum 1122d8624e203e3e0b7c2aed618fa62eac1ed9603795c59abef2e365ba73496a58f373851cc52bd4025304e18bfd8ad7f6b6beb0a5807918ad99a01f603a45dd
+runfiles size=4470
  texmf-dist/fonts/afm/public/newtx/LibertineI-5nu.afm
  texmf-dist/fonts/afm/public/newtx/LibertineMathBMI.afm
  texmf-dist/fonts/afm/public/newtx/LibertineMathBMI5.afm
@@ -1092,4 +1092,4 @@ catalogue-also minion2newtx
 catalogue-ctan /fonts/newtx
 catalogue-license lppl1.3
 catalogue-topics font font-body font-maths font-serif font-proportional font-type1 font-otf font-supp font-t1enc
-catalogue-version 1.737
+catalogue-version 1.738

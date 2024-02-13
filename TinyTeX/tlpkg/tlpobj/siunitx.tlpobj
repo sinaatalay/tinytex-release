@@ -1,6 +1,6 @@
 name siunitx
 category Package
-revision 69590
+revision 69742
 shortdesc A comprehensive (SI) units package
 longdesc Typesetting values with units requires care to ensure that the
 longdesc combined mathematical meaning of the value plus unit
@@ -25,11 +25,11 @@ longdesc l3packages bundles.
 depend l3kernel
 depend l3packages
 containersize 67800
-containerchecksum 2bd5cddfff9564cb705f2857d5f0ac1fd351f3d53312cf9d5c2eaf01ef7bd5320602eceb3bdc7f414a4a0ab5ebe1cd156ce5330c4b562ac3bf80a58fa892abf8
-doccontainersize 1288400
-doccontainerchecksum b8e367dff83667808eb84f50064e7c2b26aba3c9f007cc541083c69612d7e8ca2a37f72f5816e8b6d89450c407f8c7c048e33e40ec942e53e6b3e3d423de5b15
-srccontainersize 122996
-srccontainerchecksum c4a86afc51afe82da88947f5cf9456a9e67000d5a7e1fb6b4c4e587d43eea6922d4d1d5088c688b4b0bda135aea04c56bf9b17dce5298902084e8c60dfec3489
+containerchecksum 90f902d72292b7564e69f03f72b0afe40b70625b4f84f5b19af5d33922224764c9f428c4b20c77c0a72315f8c1474902e9b697375afe6e304e6c37cc861b46e8
+doccontainersize 1288068
+doccontainerchecksum 61d5aa847c2c73d298d4b9dc55d8fd408d1aba93b7f6bfeb9351dcbed36bcee1ead5e15b70440f07c1901eb759809b0aebb421060fa718a309398dd6b0a9a954
+srccontainersize 122936
+srccontainerchecksum 6718b92355197dbe77bbf8be23f57a1679cd1df263918d6c22bf82b71076e62bd6f0c6aa84fcaf4bfae43c063f828b678bc0c9ca4f960a66e78d63b46411a643
 runfiles size=159
  texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
  texmf-dist/tex/latex/siunitx/siunitx-binary.cfg
@@ -42,4 +42,4 @@ catalogue-contact-repository https://github.com/josephwright/siunitx
 catalogue-ctan /macros/latex/contrib/siunitx
 catalogue-license lppl1.3c
 catalogue-topics units scientific-docs expl3
-catalogue-version 3.3.10
+catalogue-version 3.3.11

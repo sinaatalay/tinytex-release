@@ -1,6 +1,6 @@
 name babel
 category Package
-revision 69343
+revision 69742
 shortdesc Multilingual support for LaTeX, LuaLaTeX, XeLaTeX, and Plain TeX
 longdesc This package manages culturally-determined typographical (and
 longdesc other) rules for a wide range of languages. A document may
@@ -13,13 +13,13 @@ longdesc about 300 languages from around the World, including many
 longdesc written in non-Latin and RTL scripts. Many of them work with
 longdesc pdfLaTeX, as well as with XeLaTeX and LuaLaTeX, out of the box.
 longdesc A few even work with plain formats.
-containersize 229440
-containerchecksum 8c4b15316808e7de5c039082ecec99cb1d2ab72909cb5c85899180e55d7d425db4440fe6fa9b9f801345c34d55fcfaefba2296d424187bf6f809ca1dd96245dd
-doccontainersize 1044336
-doccontainerchecksum 5f6a02d13ca3e1104587595edffec7735d84ae5b4686692db04325a1bf3b82a45c08c8fb94d6cc79b0da02778e30f7eb8ff0473fcbb30e260022c647e4a8fdf3
-srccontainersize 885928
-srccontainerchecksum fab559d1876e220830972bae45ffbc2f25c1ae0c0d16f0ba4b857bac5a6f92316bd45951b2fc4c718f0fe3947d88afa0aeaee813787b23040bfbffaf88018850
-runfiles size=1265
+containersize 230712
+containerchecksum 31b2c697f13df80472f5a209bb3b23ab7458e99c7329728ce767c1c116b7706465928541bb5b2f749b6e6d1ced4f43b92dd432e42c03660d18271a1bb243b2e9
+doccontainersize 1051364
+doccontainerchecksum fbe053f25e6db1df9856c03813070842dac62bb9e4e541a8ee29e990ea52017824cb260d8fac4f8a9002d8d07b3dc0726795659b73e7c58db3c9f6b8b84c8b05
+srccontainersize 886560
+srccontainerchecksum f71762c2f2062e92e74ad661bd3088b8e1102320c5e54e68be419b8f96561a1e93399204bb639e3416a081c651cd5cc198995d42556655772831766eca484da9
+runfiles size=1267
  texmf-dist/makeindex/babel/bbglo.ist
  texmf-dist/makeindex/babel/bbind.ist
  texmf-dist/tex/generic/babel/UKenglish.sty
@@ -56,6 +56,7 @@ runfiles size=1265
  texmf-dist/tex/generic/babel/danish.sty
  texmf-dist/tex/generic/babel/dutch.sty
  texmf-dist/tex/generic/babel/english.sty
+ texmf-dist/tex/generic/babel/errbabel.def
  texmf-dist/tex/generic/babel/esperanto.sty
  texmf-dist/tex/generic/babel/estonian.sty
  texmf-dist/tex/generic/babel/finnish.sty
@@ -370,6 +371,7 @@ runfiles size=1265
  texmf-dist/tex/generic/babel/locale/gaa/babel-ga.tex
  texmf-dist/tex/generic/babel/locale/gaa/babel-gaa.ini
  texmf-dist/tex/generic/babel/locale/gd/babel-gd.ini
+ texmf-dist/tex/generic/babel/locale/gd/babel-scottish.tex
  texmf-dist/tex/generic/babel/locale/gd/babel-scottishgaelic.tex
  texmf-dist/tex/generic/babel/locale/gez/babel-geez.tex
  texmf-dist/tex/generic/babel/locale/gez/babel-gez.ini
@@ -989,4 +991,4 @@ catalogue-contact-repository https://github.com/latex3/babel
 catalogue-ctan /macros/latex/required/babel/base
 catalogue-license lppl1.3
 catalogue-topics multilingual
-catalogue-version 24.1
+catalogue-version 24.2

@@ -1,6 +1,6 @@
-# $Id: TLWinGoo.pm 69435 2024-01-15 20:05:55Z siepo $
+# $Id: TLWinGoo.pm 69646 2024-01-31 18:17:20Z karl $
 # TeXLive::TLWinGoo.pm - Windows goop.
-# Copyright 2008-2023 Siep Kroonenberg, Norbert Preining
+# Copyright 2008-2024 Siep Kroonenberg, Norbert Preining
 # This file is licensed under the GNU General Public License version 2
 # or any later version.
 
@@ -13,7 +13,7 @@
 
 package TeXLive::TLWinGoo;
 
-my $svnrev = '$Revision: 69435 $';
+my $svnrev = '$Revision: 69646 $';
 my $_modulerevision;
 if ($svnrev =~ m/: ([0-9]+) /) {
   $_modulerevision = $1;

@@ -1,0 +1,25 @@
+[Tue 02/13/2024 17:49:55.32] self update: texlive.infra (69447 -> 69740)
+[Tue Feb 13 17:50:08 2024] update: achemso (65103 -> 69638)
+[Tue Feb 13 17:50:15 2024] update: babel (69343 -> 69742)
+[Tue Feb 13 17:50:16 2024] update: footmisc (67556 -> 69729)
+[Tue Feb 13 17:50:25 2024] update: koma-script (67573 -> 69755)
+[Tue Feb 13 17:50:26 2024] update: latexmk (69373 -> 69657)
+[Tue Feb 13 17:50:27 2024] update: mhchem (61456 -> 69639)
+[Tue Feb 13 17:50:38 2024] update: newtx (69381 -> 69756)
+[Tue Feb 13 17:50:39 2024] update: siunitx (69590 -> 69742)
+[Tue Feb 13 17:50:40 2024] update: texlive-scripts (69614 -> 69818)
+[Tue Feb 13 17:50:40 2024] command: mktexlsr
+[Tue Feb 13 17:50:41 2024] command: updmap-sys
+[Tue Feb 13 17:50:44 2024] command: fmtutil-sys --byfmt latex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:50:53 2024]   OK: latex.fmt/pdftex
+[Tue Feb 13 17:50:53 2024] command: fmtutil-sys --byfmt dvilualatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:03 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex
+[Tue Feb 13 17:51:03 2024] command: fmtutil-sys --byfmt xelatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:12 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex xelatex.fmt/xetex
+[Tue Feb 13 17:51:12 2024] command: fmtutil-sys --byfmt pdflatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:20 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex xelatex.fmt/xetex pdflatex.fmt/pdftex
+[Tue Feb 13 17:51:20 2024] command: fmtutil-sys --byfmt lualatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:30 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex xelatex.fmt/xetex pdflatex.fmt/pdftex lualatex.fmt/luahbtex
+[Tue Feb 13 17:52:30 2024] install: sourcesanspro
+[Tue Feb 13 17:52:30 2024] command: mktexlsr
+[Tue Feb 13 17:52:31 2024] command: updmap-sys

@@ -11,8 +11,8 @@
 %\def\ntx@state{0} % 0 for both, 1 for tutex only, 2 for legacy only
 \def\setstate#1{\if 1\ntx@showstate\typeout{State=#1}\fi}
 
-\def\fileversion{1.737}
-\def\filedate{2024/01/11}
+\def\fileversion{1.738}
+\def\filedate{2024/02/08}
 \ProvidesPackage{newtxtext}[%
 \filedate\space v\fileversion (Michael Sharpe) latex and unicode latex support for TeXGyreTermesX]
 
@@ -227,7 +227,14 @@
 \ProcessOptionsX\relax
 
 \ifntx@supsflag%
-\PackageWarningNoLine{newpxtext}{sups options no longer handled---use superiors package (v2) instead.}\fi
+\PackageWarningNoLine{newtxtext}{sups options no longer handled---use superiors package (v2) instead.}\fi
+
+\ifthenelse{\not\equal{\sfdefault}{cmss}}%
+  {\ntx@helvfalse}{}
+\ifthenelse{\not\equal{\ttdefault}{cmtt}}%
+  {\ntx@ttfalse}{}
+\ifntx@helv\renewcommand*{\sfdefault}{qhv}\fi
+\ifntx@tt\renewcommand*{\ttdefault}{ntxtt}\fi
 
 % otfmath beats no-math
 \ifntx@otfmath\ntx@nomathfalse\fi
@@ -241,8 +248,6 @@
 \ifntx@newtx\let\ntx@scale=\ntxtext@scale\fi
 % following lines required by newtxmath
 % They must follow the definition of \ntx@scaled
-\@tempdima=\ntx@scale\p@\@tempdima=\ntx@helvratio\@tempdima%
-\edef\qhv@scale{\strip@pt\@tempdima}
 \edef\ntx@scaled{s*[\ntx@scale]}% used in fd files
 \providecommand*{\ntx@minfam}{minntx} % won't override value from newtx
 
@@ -552,8 +557,6 @@
 %          \fi}%
 %        \fi
 %    \fi
-  \ifntx@helv\renewcommand*{\sfdefault}{qhv}\fi
-  \ifntx@tt\renewcommand*{\ttdefault}{ntxtt}\fi
   \DeclareRobustCommand\thfamily % new family for theorem font
         {\not@math@alphabet\thfamily\relax
          \fontfamily\thdefault\selectfont}

@@ -346,9 +346,7 @@
   \else\ifnum\count@=\z@
     \bbl@charclass{-}%
   \else
-    \bbl@error{Double hyphens aren't allowed in \string\babelcharclass\\%
-               because it's potentially ambiguous}%
-              {See the manual for further info}%
+    \bbl@error{double-hyphens-class}{}{}{}%
   \fi\fi}
 \newcommand\babelinterchar[5][]{%
   \let\bbl@kv@label\@empty
@@ -374,17 +372,11 @@
               @#3@#4@#2 \@empty\endcsname}}}}
 \DeclareRobustCommand\enablelocaleinterchar[1]{%
   \bbl@ifunset{bbl@ic@#1@\languagename}%
-    {\bbl@error
-       {'#1' for '\languagename' cannot be enabled.\\%
-        Maybe there is a typo.}%
-       {See the manual for further details.}}%
+    {\bbl@error{unknown-interchar}{#1}{}{}}%
     {\bbl@csarg\let{ic@#1@\languagename}\@firstofone}}
 \DeclareRobustCommand\disablelocaleinterchar[1]{%
   \bbl@ifunset{bbl@ic@#1@\languagename}%
-    {\bbl@error
-       {'#1' for '\languagename' cannot be disabled.\\%
-        Maybe there is a typo.}%
-       {See the manual for further details.}}%
+    {\bbl@error{unknown-interchar-b}{#1}{}{}}%
     {\bbl@csarg\let{ic@#1@\languagename}\@gobble}}
 \providecommand\bbl@provide@intraspace{}
 \bbl@trace{Redefinitions for bidi layout}

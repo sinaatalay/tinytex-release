@@ -50,7 +50,7 @@
   \ifnum\bbl@tempa>2012 \ifnum\bbl@tempa<2051
     \bbl@afterfi\expandafter\@gobble
   \fi\fi
-    {\bbl@error{Year~out~of~range}{The~allowed~range~is~2013-2050}}%
+    {\bbl@error{year-out-range}{2013-2050}{}{}}%
   \bbl@xin@{\bbl@tempa}{\bbl@cs@firstjal@xx}%
   \ifin@\def\bbl@tempe{20}\else\def\bbl@tempe{21}\fi
   \edef\bbl@tempc{\fp_eval:n{\bbl@cs@jd{\bbl@tempa}{#2}{#3}+.5}}% current

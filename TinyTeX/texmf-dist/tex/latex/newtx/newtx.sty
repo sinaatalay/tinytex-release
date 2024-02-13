@@ -2,8 +2,8 @@
 
 
 %Package to simplify loading of newtxmath with a text font family such as newtxtext for all latex engines, or for newtxtext and an otf math package.
-\def\fileversion{1.735}
-\def\filedate{2023/12/18}
+\def\fileversion{1.738}
+\def\filedate{2024/02/08}
 \ProvidesPackage{newtx}[%
 \filedate\space v\fileversion (Michael Sharpe) latex and unicode latex support for newtxmath and a supported text font family, or for newtxtext and an otf math package]
 
@@ -105,7 +105,6 @@
 \newcommand*{\ntxtext@rm}{} % not understood by libertinus-otf
 \newcommand*{\ntxtext@sf}{}% not understood by libertinus-otf
 
-
 \newcommand*{\ntxtext@scale}{1}
 \newcommand*{\ntxmath@scale}{1} 
 \DeclareOptionX{scaled}[1]{\renewcommand*{\ntxtext@scale}{#1}\renewcommand*{\ntxmath@scale}{#1}}
@@ -121,6 +120,16 @@
 \DeclareOptionX{ttscale}[]{\renewcommand*{\ntxtext@ttscale}{#1}}
 \DeclareOptionX{rm}[true]{\renewcommand*{\ntxtext@rm}{#1}}
 \DeclareOptionX{sf}[true]{\renewcommand*{\ntxtext@sf}{#1}}
+\newif\iftx@helv \tx@helvtrue
+\newif\iftx@tt \tx@tttrue
+\DeclareOptionX{nohelv}[true]{%
+\@nameuse{if#1}\tx@helvfalse\fi}
+\DeclareOptionX{nott}[true]{%
+\@nameuse{if#1}\tx@ttfalse\fi}
+\def\tx@helvratio{.94}
+\DeclareOptionX{helvratio}[0.94]{%
+\def\tx@helvratio{#1}
+}
 
 \DeclareOptionX{type1}[true]{}% no effect now
 %{%\@nameuse{if#1}\ntx@otftextfalse\fi}
@@ -259,7 +268,8 @@
 \DeclareOptionX{sfracscaling}{%
 \def\tx@sfrSC{#1}}
 % \ntx@Topt contains all unknown options that are not math options. It contains no scale options. \ntx@Mopt lists all the math options.
-\ProcessOptionsX\relax 
+\ProcessOptionsX\relax
+
 %\show\ntx@Mopt
 %\show\ntx@Topt
 %\traceon
@@ -275,8 +285,30 @@
      \PackageWarning{newtx.sty}{Reverting to newtxtext: newtx with option {\tt otfmath} can not handle other text packages.}
      \ntx@id=0
      \ntx@text % revert to newtxtext
-\fi\fi
-
+   \fi
+\else % t1 math
+  \ifnum\ntx@id=0
+    \ifthenelse{\not\equal{\sfdefault}{cmss}}%
+      {\tx@helvfalse}{}
+    \ifthenelse{\not\equal{\ttdefault}{cmtt}}%
+      {\tx@ttfalse}{}
+    \iftx@helv
+      \renewcommand*{\sfdefault}{qhv}
+      \@tempdima=\ntxtext@scale\p@
+      \@tempdima=\tx@helvratio\@tempdima%
+      \edef\qhv@scale{\strip@pt\@tempdima}
+    \else
+      \PassOptionsToPackage{nohelv=true}{newtxtext}
+    \fi
+    \iftx@tt\renewcommand*{\ttdefault}{ntxtt}\fi
+    \ifthenelse{\not\equal{\tx@helvratio}{.94}}%
+      {\PassOptionsToPackage{helvratio=\tx@helvratio}%
+      {newtxtext}}{}
+    \iftx@tt\else%
+      \PassOptionsToPackage{nott=true}{newtxtext}\fi
+    
+  \fi
+\fi
 %\ifntx@badnof\PackageError{newtx.sty}{Incompatible options, nofontspec and otfmath}{Incompatible options, nofontspec and otfmath}\fi
 % Set the text scale macros appropriately
 %\show\ntx@TF

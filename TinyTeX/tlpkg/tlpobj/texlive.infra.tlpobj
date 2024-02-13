@@ -1,6 +1,6 @@
 name texlive.infra
 category TLCore
-revision 69447
+revision 69740
 shortdesc basic TeX Live infrastructure
 longdesc This package contains the files needed to get tlmgr running:
 longdesc perl modules, xz binaries, plus (sometimes) tar, wget, lz4, and
@@ -8,11 +8,7 @@ longdesc various other support files. This package also represents the
 longdesc tlcritical recovery scripts. The standalone installer is close,
 longdesc but not the same; it's defined in 00texlive.installer.
 depend texlive.infra.ARCH
-containersize 360200
-containerchecksum e91e5d5a4ec354d6c454c76ebf6a882f90930e88cc16ac4dbd60ddb578f392e975a612aadaa9af3949a6b9b132b5feacbefb24794945410de2ab8c5ba55bb76d
-doccontainersize 203888
-doccontainerchecksum a15339f2751d9f2a6dd5412aba08f0c8dcfee11681b58698ca8866167eb63ae4ef7566a78e3ce71c1aff43a154a61eeeca95f03ed7ebef97d2001ef736732564
-runfiles size=325
+runfiles size=327
  LICENSE.CTAN
  LICENSE.TL
  release-texlive.txt

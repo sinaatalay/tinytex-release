@@ -40,7 +40,7 @@
     \wlog{File: #1 #4 #3 <#2>}%
     \let\ProvidesFile\@undefined}
 \fi
-\ProvidesFile{babel.def}[2024/01/07 v24.1 Babel common definitions]
+\ProvidesFile{babel.def}[2024/02/07 v24.2 Babel common definitions]
 \ifx\AtBeginDocument\@undefined  % TODO. change test.
   \def\@empty{}
 \def\loadlocalcfg#1{%
@@ -92,12 +92,13 @@
   \ifx#2\@empty\else\expandafter\zap@space\fi
   #2}
 \let\bbl@trace\@gobble
-\def\bbl@error#1#2{%
+\def\bbl@error#1{% Implicit #2#3#4
   \begingroup
-    \newlinechar=`\^^J
-    \def\\{^^J(babel) }%
-    \errhelp{#2}\errmessage{\\#1}%
-  \endgroup}
+    \catcode`\\=0   \catcode`\==12 \catcode`\`=12
+    \catcode`\^^M=5 \catcode`\%=14
+    \input errbabel.def
+  \endgroup
+  \bbl@error{#1}}
 \def\bbl@warning#1{%
   \begingroup
     \newlinechar=`\^^J
@@ -595,8 +596,8 @@
     \toks@\expandafter{\bbl@tempc#3}%
     \expandafter\edef\csname extras\languagename\endcsname{\the\toks@}%
   \fi}
-\def\bbl@version{24.1}
-\def\bbl@date{2024/01/07}
+\def\bbl@version{24.2}
+\def\bbl@date{2024/02/07}
 \ifx\language\@undefined
   \csname newcount\endcsname\language
 \fi
@@ -1015,10 +1016,7 @@
 \fi
 \ifx\originalTeX\@undefined\let\originalTeX\@empty\fi
 \ifx\babel@beginsave\@undefined\let\babel@beginsave\relax\fi
-\providecommand\setlocale{%
-  \bbl@error
-    {Not yet available}%
-    {Find an armchair, sit down and wait}}
+\providecommand\setlocale{\bbl@error{not-yet-available}{}{}{}}
 \let\uselocale\setlocale
 \let\locale\setlocale
 \let\selectlocale\setlocale
@@ -1046,12 +1044,7 @@
     They might not work as expected and their behavior\\%
     could change in the future.\\%
     Reported}}
-\def\@nolanerr#1{%
-  \bbl@error
-    {You haven't defined the language '#1' yet.\\%
-     Perhaps you misspelled it or your installation\\%
-     is not complete}%
-    {Your command will be ignored, type <return> to proceed}}
+\def\@nolanerr#1{\bbl@error{undefined-language}{#1}{}{}}
 \def\@nopatterns#1{%
   \bbl@warning
     {No hyphenation patterns were preloaded for\\%
@@ -1523,10 +1516,7 @@
      \initiate@active@char{#2}%
      #1%
      \bbl@activate{#2}}%
-    {\bbl@error
-       {I can't declare a shorthand turned off (\string#2)}
-       {Sorry, but you can't use shorthands which have been\\%
-        turned off in the package options}}}
+    {\bbl@error{shorthand-is-off}{}{#2}{}}}
 \def\user@language@group{user@\language@group}
 \def\bbl@set@user@generic#1#2{%
   \bbl@ifunset{user@generic@active#1}%
@@ -1559,17 +1549,8 @@
          \bbl@activate{#2}%
        \fi
      \fi}%
-    {\bbl@error
-       {Cannot declare a shorthand turned off (\string#2)}
-       {Sorry, but you cannot use shorthands which have been\\%
-        turned off in the package options}}}
-\def\@notshorthand#1{%
-  \bbl@error{%
-    The character '\string #1' should be made a shorthand character;\\%
-    add the command \string\useshorthands\string{#1\string} to
-    the preamble.\\%
-    I will ignore your instruction}%
-   {You may proceed, but expect unexpected results}}
+    {\bbl@error{shorthand-is-off}{}{#2}{}}}
+\def\@notshorthand#1{\bbl@error{not-a-shorthand}{#1}{}{}}
 \newcommand*\shorthandon[1]{\bbl@switch@sh\@ne#1\@nnil}
 \DeclareRobustCommand*\shorthandoff{%
   \@ifstar{\bbl@shorthandoff\tw@}{\bbl@shorthandoff\z@}}
@@ -1577,10 +1558,7 @@
 \def\bbl@switch@sh#1#2{%
   \ifx#2\@nnil\else
     \bbl@ifunset{bbl@active@\string#2}%
-      {\bbl@error
-         {I can't switch '\string#2' on or off--not a shorthand}%
-         {This character is not a shorthand. Maybe you made\\%
-          a typing mistake? I will ignore your instruction.}}%
+      {\bbl@error{not-a-shorthand-b}{}{#2}{}}%
       {\ifcase#1%   off, on, off*
          \catcode`#212\relax
        \or
@@ -1682,9 +1660,7 @@
      \fi}}}
 \@onlypreamble\languageattribute
 \newcommand*{\@attrerr}[2]{%
-  \bbl@error
-    {The attribute #2 is unknown for language #1.}%
-    {Your command will be ignored, type <return> to proceed}}
+  \bbl@error{unknown-attribute}{#1}{#2}{}}
 \def\bbl@declare@ttribute#1#2#3{%
   \bbl@xin@{,#2,}{,\BabelModifiers,}%
   \ifin@
@@ -1971,9 +1947,7 @@
   \bbl@scswitch
   \ifx\bbl@G\@empty
     \def\SetString##1##2{%
-      \bbl@error{Missing group for string \string##1}%
-        {You must assign strings to some category, typically\\%
-         captions or extras, but you set none}}%
+      \bbl@error{missing-group}{##1}{}{}}%
   \fi
   \ifx\@empty#1%
     \bbl@usehooks{defaultcommands}{}%
@@ -2293,14 +2267,8 @@
 \or
   \input xebabel.def
 \fi
-\providecommand\babelfont{%
-  \bbl@error
-    {This macro is available only in LuaLaTeX and XeLaTeX.}%
-    {Consider switching to these engines.}}
-\providecommand\babelprehyphenation{%
-  \bbl@error
-    {This macro is available only in LuaLaTeX.}%
-    {Consider switching to that engine.}}
+\providecommand\babelfont{\bbl@error@{only-lua-xe}{}{}{}}
+\providecommand\babelprehyphenation{\bbl@error{only-lua}{}{}{}}
 \ifx\babelposthyphenation\@undefined
   \let\babelposthyphenation\babelprehyphenation
   \let\babelpatterns\babelprehyphenation

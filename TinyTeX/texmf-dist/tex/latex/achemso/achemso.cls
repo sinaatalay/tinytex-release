@@ -21,7 +21,7 @@
 %% same distribution. (The sources need not necessarily be
 %% in the same archive or directory.)
 \ProvidesClass{achemso}
-  [2022-11-25 v3.13f Submission to ACS journals]
+  [2024-01-30 v3.13g Submission to ACS journals]
 \LoadClass[12pt,letter]{article}
 \newcommand*\acs@warning{\ClassWarning{achemso}}
 \newcommand*\acs@ifundefined[1]{%
@@ -1361,6 +1361,7 @@
   }%
   \input{achemso-jacsat.cfg}%
 }
+\let\@unusedoptionlist\@empty
 \acs@type@check
 \ifx\acs@manuscript\acs@manuscript@note
   \SectionsOff

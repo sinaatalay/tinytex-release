@@ -1,6 +1,6 @@
 name footmisc
 category Package
-revision 67556
+revision 69729
 shortdesc A range of footnote options
 longdesc A collection of ways to change the typesetting of footnotes.
 longdesc The package provides means of changing the layout of the
@@ -17,12 +17,13 @@ longdesc packages, though those are both also portmanteau packages.
 longdesc (Don't be seduced by fnpara, whose implementation is improved
 longdesc by the present package.) The perpage option is also offered by
 longdesc footnpag and by the rather more general-purpose perpage
-containersize 7684
-containerchecksum 814aa0a1add20812ca241280a408c1bba21920c2751f171a67532aaf6e4dafd786578701a7f431a0295a139052c8c7c37f46c7e4df35e6fd14f468a5c7181b75
+depend bigfoot
+containersize 7692
+containerchecksum 7e205e392bbc933c6592f91afa053573f174ea83b07d81a17a144b29bc3837ba4e6639c56f5b07a9840e141e408163cbc2edbcee5fb7b159264ebc54f4a09645
 doccontainersize 514744
-doccontainerchecksum 4a257a2b7620bc8660785ab5d8c8f167ba044e2bf8fc6b340b8645c549f9d4c528d9fec9110671f1dd757892c6193681bc845b57a7ab722423c8184a276f8043
-srccontainersize 22404
-srccontainerchecksum 514acb8de22592d5211c97ad8a82659374e574c4ed972604443036381875d33d2e5956788fd9f9577ca1feda59290209f5165568dd00dd0f059dc43fba4efe14
+doccontainerchecksum 93d3ca6476356b7a0ed955edbe442764740d32db58dba91276f6bd891ca4009c3731872a703f1621e344a69c401cd70a7cd9e5fe2845d7667a8e0dc61e2ad2a5
+srccontainersize 22408
+srccontainerchecksum 6b2960dd45ec7ff85cbeeac863a068c3eae5d161b19811f447fe31b572a7a11006c3608ddd34a677ade6c69e781bcd7938dbe451b0dbebb6c82708b393d363e6
 runfiles size=13
  texmf-dist/tex/latex/footmisc/footmisc-2011-06-06.sty
  texmf-dist/tex/latex/footmisc/footmisc.sty

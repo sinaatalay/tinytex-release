@@ -1154,16 +1154,12 @@ end
   \ifvmode
     \expandafter\bbl@chprop
   \else
-    \bbl@error{\string\babelcharproperty\space can be used only in\\%
-               vertical mode (preamble or between paragraphs)}%
-              {See the manual for further info}%
+    \bbl@error{charproperty-only-vertical}{}{}{}%
   \fi}
 \newcommand\bbl@chprop[3][\the\count@]{%
   \@tempcnta=#1\relax
-  \bbl@ifunset{bbl@chprop@#2}%
-    {\bbl@error{No property named '#2'. Allowed values are\\%
-                direction (bc), mirror (bmg), and linebreak (lb)}%
-               {See the manual for further info}}%
+  \bbl@ifunset{bbl@chprop@#2}% {unknown-char-property}
+    {\bbl@error{unknown-char-property}{}{#2}{}}%
     {}%
   \loop
     \bbl@cs{chprop@#2}{#3}%
@@ -1243,10 +1239,7 @@ end
         \in@{,####1,}{,nil,step,data,remove,insert,string,no,pre,&%
             no,post,penalty,kashida,space,spacefactor,}&%
         \ifin@\else
-          \bbl@error
-           {Bad option '####1' in a transform.\\&%
-            I’ll ignore it but expect more errors}&%
-           {See the manual for further info.}&%
+          \bbl@error{bad-transform-option}{####1}{}{}&%
         \fi}}&%
     \let\bbl@kv@attribute\relax
     \let\bbl@kv@label\relax
@@ -1263,11 +1256,7 @@ end
           \bbl@ifsamestring{#3,\bbl@kv@label}{##1,##2}&%
             {\bbl@ifsamestring{\bbl@kv@fonts}{##3}&%
                {\count@\@ne}&%
-               {\bbl@error
-                 {Transforms cannot be re-assigned to different\\&%
-                  fonts. The conflict is in '\bbl@kv@label'.\\&%
-                  Apply the same fonts or use a different label}&%
-                 {See the manual for further details.}}}&%
+               {\bbl@error{font-conflict-transforms}{}{}{}}}&%
             {}}&%
         \bbl@transfont@list
         \ifnum\count@=\z@
@@ -1356,17 +1345,11 @@ end
       {}}}
 \DeclareRobustCommand\enablelocaletransform[1]{%
   \bbl@ifunset{bbl@ATR@#1@\languagename @}%
-    {\bbl@error
-       {'#1' for '\languagename' cannot be enabled.\\%
-        Maybe there is a typo or it’s a font-dependent transform}%
-       {See the manual for further details.}}%
+    {\bbl@error{transform-not-available}{#1}{}{}}%
     {\bbl@csarg\setattribute{ATR@#1@\languagename @}\@ne}}
 \DeclareRobustCommand\disablelocaletransform[1]{%
   \bbl@ifunset{bbl@ATR@#1@\languagename @}%
-    {\bbl@error
-       {'#1' for '\languagename' cannot be disabled.\\%
-        Maybe there is a typo or it’s a font-dependent transform}%
-       {See the manual for further details.}}%
+    {\bbl@error{transform-not-available-b}{#1}{}{}}%
     {\bbl@csarg\unsetattribute{ATR@#1@\languagename @}}}
 \def\bbl@activateposthyphen{%
   \let\bbl@activateposthyphen\relax

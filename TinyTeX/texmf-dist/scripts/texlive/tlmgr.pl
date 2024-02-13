@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# $Id: tlmgr.pl 69413 2024-01-13 22:43:25Z karl $
+# $Id: tlmgr.pl 69686 2024-02-03 07:34:54Z preining $
 # Copyright 2008-2024 Norbert Preining
 # This file is licensed under the GNU General Public License version 2
 # or any later version.
@@ -8,8 +8,8 @@
 
 use strict; use warnings;
 
-my $svnrev = '$Revision: 69413 $';
-my $datrev = '$Date: 2024-01-13 23:43:25 +0100 (Sat, 13 Jan 2024) $';
+my $svnrev = '$Revision: 69686 $';
+my $datrev = '$Date: 2024-02-03 08:34:54 +0100 (Sat, 03 Feb 2024) $';
 my $tlmgrrevision;
 my $tlmgrversion;
 my $prg;
@@ -65,7 +65,7 @@ BEGIN {
     $kpsewhichname = "kpsewhich";
   }
   if (-r "$bindir/$kpsewhichname") {
-    # if not in bootstrapping mode => kpsewhich exists, so use it to get $Master
+    # not in bootstrapping mode => kpsewhich exists, so use it to get $Master
     chomp($Master = `kpsewhich -var-value=TEXMFROOT`);
   }
 
@@ -622,7 +622,9 @@ for the full story.\n";
     tldie("$prg: Try --help if you need it.\n");
   }
 
-  #
+  # nice to have the version if debugging.
+  debug("tlmgr version $tlmgrversion\n");
+
   # the main tree we will be working on
   $::maintree = $Master;
   if ($opts{"usermode"}) {
@@ -634,6 +636,7 @@ for the full story.\n";
       chomp($::maintree = `kpsewhich -var-value TEXMFHOME`);
     }
   }
+  debug("maintree=$::maintree\n");
 
   # besides doing normal logging if -logfile is specified, we try to log
   # package related actions (install, remove, update) to
@@ -832,7 +835,8 @@ sub execute_action {
 
 
 # run CMD with notice to the user and if exit status is nonzero, complain.
-# return exit status.
+# log output with logcommand (tlmgr-commands.log).
+# return F_OK or F_ERROR.
 # 
 sub do_cmd_and_check {
   my $cmd = shift;
@@ -848,7 +852,8 @@ sub do_cmd_and_check {
     $out = "";
   } elsif (wndws() && (! -r "$Master/bin/windows/luatex.dll")) {
     # deal with the case where only scheme-infrastructure is installed
-    # on Windows, thus no luatex.dll is available and the wrapper cannot be started
+    # on Windows, thus no luatex.dll is available and the wrapper cannot
+    # be started
     tlwarn("Cannot run wrapper due to missing luatex.dll\n");
     $ret = $F_OK;
     $out = "";
@@ -857,27 +862,28 @@ sub do_cmd_and_check {
   }
   $out =~ s/\n+$//; # trailing newlines don't seem interesting
   my $outmsg = "output:\n$out\n--end of output of $cmd.\n";
-  if ($ret == $F_OK) {
+  if ($ret == 0) {
     info("done running $cmd.\n") unless $cmd =~ /^fmtutil/;
     logcommand("success, $outmsg");
     ddebug("$cmd $outmsg");
-    return ($F_OK);
   } else {
     info("\n");
     tlwarn("$prg: $cmd failed (status $ret), output:\n$out\n");
     logcommand("error, status: $ret, $outmsg");
-    return ($F_ERROR);
+    $ret = $F_ERROR;
   }
+  return $ret;
 }
 
 # run external programs (mktexlsr, updmap-sys, etc.) as specified by the
-# keys in the RET hash.  We return the number of unsuccessful runs, zero
-# if all ok.
+# keys in the ::execute_actions hash. We return the number of
+# unsuccessful runs, zero if all ok.
 #
 # If the "map" key is specified, the value may be a reference to a list
 # of map command strings to pass to updmap, e.g., "enable Map=ascii.map".
 #
 sub handle_execute_actions {
+  debug("starting handle_execute_actions\n");
   my $errors = 0;
 
   my $sysmode = ($opts{"usermode"} ? "-user" : "-sys");
@@ -985,7 +991,7 @@ sub handle_execute_actions {
       for my $e (keys %updated_engines) {
         debug ("updating formats based on $e\n");
         $errors += do_cmd_and_check
-                    ("$fmtutil_cmd --byengine $e --no-error-if-no-format $fmtutil_args");
+          ("$fmtutil_cmd --byengine $e --no-error-if-no-format $fmtutil_args");
         read_and_report_fmtutil_status_file($status_file);
         unlink($status_file);
       }
@@ -1004,10 +1010,10 @@ sub handle_execute_actions {
 
     # now go back to the hyphenation patterns and regenerate formats
     # based on the various language files
-    # this of course will in some cases duplicate fmtutil calls,
+    # this will in some cases duplicate fmtutil calls,
     # but it is much easier than actually checking which formats
     # don't need to be updated
-
+    #
     if ($regenerate_language) {
       for my $ext ("dat", "def", "dat.lua") {
         my $lang = "language.$ext";
@@ -1027,8 +1033,9 @@ sub handle_execute_actions {
     # --refresh existing formats to avoid generating new ones.
     if ($::regenerate_all_formats) {
       info("Regenerating existing formats, this may take some time ...");
-      # --refresh might already be in $invoke_fmtutil, but we don't care
-      $errors += do_cmd_and_check("$fmtutil_cmd --refresh --all $fmtutil_args");
+      # --refresh might already be in $fmtutil_args, but that's ok.
+      my $args = "--refresh --all";
+      $errors += do_cmd_and_check("$fmtutil_cmd $args $fmtutil_args");
       read_and_report_fmtutil_status_file($status_file);
       unlink($status_file);
       info("done\n");
@@ -1036,16 +1043,68 @@ sub handle_execute_actions {
     }
   }
 
+  # lmtx/context cache creation/update. This variable is set, in
+  # TLPDB::install_package, when the context package is updated or installed.
+  if (defined $::context_cache_update_needed
+      && $::context_cache_update_needed) {
+    if ($opts{"dry-run"}) {
+      debug("dry-run, skipping context cache update\n");
+    } else {
+      my $progext = ($^O =~ /^MSWin/i ? ".exe" : "");
+      $errors +=
+        TeXLive::TLUtils::update_context_cache($bindir, $progext,
+                                               \&run_postinst_logcommand);
+    }
+    $::context_cache_update_needed = 0;
+  }
+
   # undefine the global var, otherwise in GUI mode the actions
   # are accumulating
   undef %::execute_actions;
 
+  debug("finished handle_execute_actions, errors=$errors\n");
   if ($errors > 0) {
-    # should we return warning here?
+    # warning might suffice sometimes, but safer to return error.
     return $F_ERROR;
   } else {
     return $F_OK;
   }
+}
+
+# Run CMD with output logged via logcommand().  We use this for the
+# ConTeXt cache updates (above); since they are so verbose, we want the
+# output to be only in tlmgr-commands.log, not tlmgr.log or the terminal.
+# 
+# This is the same result as do_cmd_and_check, which we use for the
+# other postaction commands (fmtutil, etc.); the difference is that for
+# context, we want to share the code to actually do the updates with
+# install-tl, so there is a common routine TLUtils::update_context_cache,
+# and thus we have to handle the logging differently.
+# 
+# Another approach would be to move do_cmd_and_check to TLUtils and
+# have install-tl call that. Perhaps that would be cleaner, but then
+# there is tlmgr-specific stuff that would have to be conditionalized.
+# So, not great either way. Maybe someday we will merge install-tl and tlmgr.
+# 
+# As a result, the logging text here surrounding the output is mostly a
+# duplicate of what's in do_cmd_and_check.
+# 
+sub run_postinst_logcommand {
+  my ($cmd) = @_;
+  logpackage("command: $cmd");
+  logcommand("running $cmd");
+  my $ret = TeXLive::TLUtils::run_cmd_with_log ($cmd, \&logcommand_bare);
+  my $outmsg = "\n--end of output of $cmd";
+  if ($ret == 0) {
+    info("done running $cmd.\n") unless $cmd =~ /^fmtutil/;
+    logcommand("$outmsg (success).\n");
+  } else {
+    info("\n");
+    tlwarn("$prg: $cmd failed (status $ret), see $commandlogfile\n");
+    logcommand("$outmsg (failure, status $ret");
+    $ret = 1;
+  }
+  return $ret;
 }
 
 sub read_and_report_fmtutil_status_file {
@@ -2255,7 +2314,7 @@ sub action_backup {
     if ($clean_mode) {
       clear_old_backups ($pkg, $opts{"backupdir"}, $opts{"clean"}, $opts{"dry-run"}, 1);
     } else {
-      # for now default to xz and allow overriding with env var
+      # for now default to xz and allow overriding with envvar
       my $compressorextension = $Compressors{$::progs{'compressor'}}{'extension'};
       my $tlp = $localtlpdb->get_package($pkg);
       my $saving_verb = $opts{"dry-run"} ? "would save" : "saving";
@@ -3527,7 +3586,6 @@ sub action_update {
 
   print "end-of-updates\n" if $::machinereadable;
 
-  #
   # check that if updates to the critical packages are present all of
   # them have been successfully updated
   my $infra_update_done = 1;
@@ -3923,6 +3981,7 @@ sub action_install {
     if (!$opts{"dry-run"}) {
       if ($remotetlpdb->install_package($pkg, $localtlpdb,
             ($packs{$pkg} ? $packs{$pkg} : undef) )) {
+        # installation succeeded because we got a reference
         logpackage("${re}install: $pkg$tagstr");
       } else {
         logpackage("failed ${re}install: $pkg$tagstr");
@@ -5430,7 +5489,8 @@ sub action_recreate_tlpdb {
     next if $dirent eq ".";
     next if $dirent eq "..";
     next unless -d "$Master/bin/$dirent";
-    if (-r "$Master/bin/$dirent/kpsewhich" || -r "$Master/bin/$dirent/kpsewhich.exe") {
+    if (-r "$Master/bin/$dirent/kpsewhich"
+        || -r "$Master/bin/$dirent/kpsewhich.exe") {
       push @archs, $dirent;
       debug("$prg: skipping directory $Master/bin/$dirent, no kpsewhich there\n");
     }
@@ -6550,7 +6610,7 @@ sub action_key {
     chomp (my $TEXMFSYSCONFIG = `kpsewhich -var-value=TEXMFSYSCONFIG`);
     my $local_keyring = "$Master/tlpkg/gpg/repository-keys.gpg";
     if ($arg eq 'list') {
-      debug("running $::gpg --list-keys\n");
+      debug("running: $::gpg --list-keys\n");
       system("$::gpg --list-keys");
       return $F_OK;
     } elsif ($arg eq 'remove') {
@@ -7409,12 +7469,17 @@ FROZEN_MSG
   # save remote database if it is a net location
   # make sure that the writeout of the tlpdb is done in UNIX mode
   # since otherwise the checksum will change.
+  # For the main tlnet and tlcontrib, both of which are distributed
+  # via mirror.ctan, we make sure that we have only one hashed version
+  # of the tlpdb saved locally.
   if (!$local_copy_tlpdb_used && $location =~ m;^(https?|ftp)://;) {
     my $loc_digest = TeXLive::TLCrypto::tl_short_digest($location);
     my $loc_copy_of_remote_tlpdb =
       ($is_main ? 
         "$Master/$InfraLocation/texlive.tlpdb.main.$loc_digest" :
-        "$Master/$InfraLocation/texlive.tlpdb.$loc_digest");
+        ($location =~ m;texlive/tlcontrib/?$; ?
+          "$Master/$InfraLocation/texlive.tlpdb.tlcontrib.$loc_digest" :
+          "$Master/$InfraLocation/texlive.tlpdb.$loc_digest"));
     my $tlfh;
     if (!open($tlfh, ">:unix", $loc_copy_of_remote_tlpdb)) {
       # that should be only a debug statement, since a user without
@@ -7429,6 +7494,13 @@ FROZEN_MSG
       # are used $Master/$InfraLocation/texlive.tlpdb.main.$loc_digest
       if ($is_main) {
         for my $fn (<"$Master/$InfraLocation/texlive.tlpdb.main.*">) {
+          next if ($fn eq $loc_copy_of_remote_tlpdb);
+          unlink($fn);
+        }
+      }
+      # Do the same for tlcontrib, which is also distributed via mirror.
+      if ($location =~ m;texlive/tlcontrib/?$;) {
+        for my $fn (<"$Master/$InfraLocation/texlive.tlpdb.tlcontrib.*">) {
           next if ($fn eq $loc_copy_of_remote_tlpdb);
           unlink($fn);
         }
@@ -7688,9 +7760,16 @@ sub logpackage {
 }
 sub logcommand {
   if ($commandlogfile) {
-    $commandslogged++;
+    $commandslogged++; # not really counting commands logged, but calls
     my $tim = localtime();
     print COMMANDLOG "[$tim] @_\n";
+  }
+}
+# without the timestamp
+sub logcommand_bare {
+  if ($commandlogfile) {
+    $commandslogged++;
+    print COMMANDLOG "@_\n";
   }
 }
 
@@ -7764,7 +7843,7 @@ sub check_for_critical_updates {
     my $localrev = $tlp->revision;
     my $mtlp = $mediatlpdb->get_package($pkg);
     if (!defined($mtlp)) {
-      debug("Very surprising, $pkg is not present in the remote tlpdb.\n");
+      debug("Surprising, $pkg not present in remote tlpdb.\n");
       next;
     }
     my $remoterev = $mtlp->revision;
@@ -10297,7 +10376,7 @@ This script and its documentation were written for the TeX Live
 distribution (L<https://tug.org/texlive>) and both are licensed under the
 GNU General Public License Version 2 or later.
 
-$Id: tlmgr.pl 69413 2024-01-13 22:43:25Z karl $
+$Id: tlmgr.pl 69686 2024-02-03 07:34:54Z preining $
 =cut
 
 # test HTML version: pod2html --cachedir=/tmp tlmgr.pl >/tmp/tlmgr.html

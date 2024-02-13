@@ -1,6 +1,6 @@
 name koma-script
 category TLCore
-revision 67573
+revision 69755
 shortdesc A bundle of versatile classes and packages
 longdesc The KOMA-Script bundle provides replacements for the article,
 longdesc report, and book classes with emphasis on typography and
@@ -15,9 +15,10 @@ longdesc with the standard classes. Since every package has its own
 longdesc version number, the version number quoted only refers to the
 longdesc version of scrbook, scrreprt, scrartcl, scrlttr2 and typearea
 longdesc (which are the main parts of the bundle).
-depend footmisc
-containersize 7348172
-containerchecksum 0ad55b5765ec907f39bbb8bba7deee4a131d76c81a0e7bd7379031c5a8771d47c121df5a55699706c886063a12bdf338e5b47b6a6784f0a23a72891a07b322b9
+depend etoolbox
+depend xpatch
+containersize 7348176
+containerchecksum 610827993fa3d94f1b914ee24be0c0a2ec1062c1d1863dac8687e6ccf9c7866b7ea56fb45363587138d7d7842ff58cf1aa4e1c7970f48ca8f7a783e0fafea1a6
 runfiles size=4099
  texmf-dist/doc/latex/koma-script/MANIFEST.md
  texmf-dist/doc/latex/koma-script/README.md

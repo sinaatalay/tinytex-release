@@ -1,0 +1,48 @@
+
+C:\GIT\ARCHIVE\rendercv-v1\rendercv\tinytex-release\TinyTeX\bin\windows>if [:doit] == [:doit] goto :doit 
+
+C:\GIT\ARCHIVE\rendercv-v1\rendercv\tinytex-release\TinyTeX\bin\windows>set prompt=TL$G 
+
+TL>title TeX Live Manager 2023 Update 
+
+TL>set PERL5LIB=C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/tlpkg/tlperl/lib 
+
+TL>echo DO NOT CLOSE THIS WINDOW! 1>con 
+
+TL>echo TeX Live infrastructure update in progress ... 1>con 
+
+TL>echo Detailed command logging to "C:\GIT\ARCHIVE\rendercv-v1\rendercv\tinytex-release\TinyTeX\temp\update-self.log" 1>con 
+
+TL>pushd "C:\GIT\ARCHIVE\rendercv-v1\rendercv\tinytex-release\TinyTeX\temp\.." 
+
+TL>if not errorlevel 1 goto :update 
+
+TL>for %I in (texlive.infra.tar) do (
+temp\tar.exe -xmf temp\%I  
+ if errorlevel 1 goto :rollback 
+) 
+
+TL>(
+temp\tar.exe -xmf temp\texlive.infra.tar  
+ if errorlevel 1 goto :rollback 
+) 
+
+TL>tlpkg\tlperl\bin\perl.exe .\texmf-dist\scripts\texlive\tlmgr.pl _include_tlpobj tlpkg\tlpobj\texlive.infra.tlpobj 
+
+TL>if errorlevel 1 goto :rollback 
+
+TL>echo [Tue 02/13/2024 17:49:55.32] self update: texlive.infra (69447 -> 69740) 1>>"C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-var/web2c/tlmgr.log" 
+
+TL>echo self update: texlive.infra (69447 -> 69740) 1>con 
+
+TL>del "C:\GIT\ARCHIVE\rendercv-v1\rendercv\tinytex-release\TinyTeX\temp\*.tar" "C:\GIT\ARCHIVE\rendercv-v1\rendercv\tinytex-release\TinyTeX\temp\tar.exe"  
+
+TL>echo Infrastructure update finished successfully. 1>con 
+
+TL>echo About to restart tlmgr to complete update ... 1>con 
+
+TL>rem  1>con 
+
+TL>popd
+
+TL>exit /b 0 

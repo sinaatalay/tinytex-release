@@ -33,7 +33,7 @@
 %% extension |.ins|) which are part of the distribution.
 %%
 
-\ProvidesLanguage{nil}[2024/01/07 v24.1 Nil language]
+\ProvidesLanguage{nil}[2024/02/07 v24.2 Nil language]
 \LdfInit{nil}{datenil}
 \ifx\l@nil\@undefined
   \newlanguage\l@nil

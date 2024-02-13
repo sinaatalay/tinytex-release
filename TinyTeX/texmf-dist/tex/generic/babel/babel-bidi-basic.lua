@@ -42,6 +42,13 @@ Babel.fontmap[0] = {}      -- l
 Babel.fontmap[1] = {}      -- r
 Babel.fontmap[2] = {}      -- al/an
 
+-- To cancel mirroring. Also OML, OMS, U?
+Babel.symbol_fonts = Babel.symbol_fonts or {}
+Babel.symbol_fonts[font.id('tenln')] = true
+Babel.symbol_fonts[font.id('tenlnw')] = true
+Babel.symbol_fonts[font.id('tencirc')] = true
+Babel.symbol_fonts[font.id('tencircw')] = true
+
 Babel.bidi_enabled = true
 Babel.mirroring_enabled = true
 
@@ -83,6 +90,14 @@ local function insert_numeric(head, state)
   end
   new_state.san, new_state.ean = nil, nil
   return head, new_state
+end
+
+local function glyph_not_symbol_font(node)
+  if node.id == GLYPH then
+    return not Babel.symbol_fonts[node.font]
+  else
+   return false
+  end
 end
 
 -- TODO - \hbox with an explicit dir can lead to wrong results
@@ -140,7 +155,7 @@ function Babel.bidi(head, ispar, hdir)
     -- current one is not added until we start processing the neutrals.
 
     -- three cases: glyph, dir, otherwise
-    if item.id == GLYPH
+    if glyph_not_symbol_font(item)
        or (item.id == 7 and item.subtype == 2) then
 
       local d_font = nil
@@ -269,7 +284,7 @@ function Babel.bidi(head, ispar, hdir)
         temp = 'on'     -- W6
       end
       for e = first_et, #nodes do
-        if nodes[e][1].id == GLYPH then nodes[e][2] = temp end
+        if glyph_not_symbol_font(nodes[e][1]) then nodes[e][2] = temp end
       end
       first_et = nil
       has_en = false
@@ -309,7 +324,7 @@ function Babel.bidi(head, ispar, hdir)
       temp = 'on'     -- W6
     end
     for e = first_et, #nodes do
-      if nodes[e][1].id == GLYPH then nodes[e][2] = temp end
+      if glyph_not_symbol_font(nodes[e][1]) then nodes[e][2] = temp end
     end
   end
 
@@ -345,7 +360,7 @@ function Babel.bidi(head, ispar, hdir)
       for r = first_on, q - 1 do
         nodes[r][2] = temp
         item = nodes[r][1]    -- MIRRORING
-        if Babel.mirroring_enabled and item.id == GLYPH
+        if Babel.mirroring_enabled and glyph_not_symbol_font(item)
              and temp == 'r' and characters[item.char] then
           local font_mode = ''
           if item.font > 0 and font.fonts[item.font].properties then

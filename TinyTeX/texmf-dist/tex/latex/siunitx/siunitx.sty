@@ -41,7 +41,7 @@
       }%
     \endinput
   }%
-\ProvidesExplPackage {siunitx} {2024-01-25} {3.3.10}
+\ProvidesExplPackage {siunitx} {2024-02-07} {3.3.11}
   {A comprehensive (SI) units package}
 \msg_new:nnnn { siunitx } { incompatible-package }
   { Package~'#1'~incompatible. }
@@ -4387,9 +4387,12 @@
   { \__siunitx_compound_uncert_bracket:nnw {#1#2#3#4#5#6} {#7#8} #9 \q_stop }
 \cs_new:Npn \__siunitx_compound_uncert_bracket:nnw #1#2 #3 \q_nil #4 \q_nil #5 \q_stop
   {
-    \bool_lazy_or:nnTF
-      { \tl_if_blank_p:n {#2#3} }
-      { ! \tl_if_blank_p:n {#5} }
+    \bool_lazy_any:nTF
+      {
+        { ! \l__siunitx_compound_unit_repeat_bool }
+        { \tl_if_blank_p:n {#2#3} }
+        { ! \tl_if_blank_p:n {#5} }
+      }
       { \exp_not:n {#1#2#3#4#5} }
       {
         \exp_not:V \l__siunitx_compound_bracket_open_tl

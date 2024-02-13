@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
-# $Id: install-tl 69614 2024-01-27 22:48:16Z karl $
-# Copyright 2007-2023
+# $Id: install-tl 69711 2024-02-05 17:23:27Z karl $
+# Copyright 2007-2024
 # Reinhard Kotucha, Norbert Preining, Karl Berry, Siep Kroonenberg.
 # This file is licensed under the GNU General Public License version 2
 # or any later version.
@@ -12,7 +12,7 @@
 
 use strict; use warnings;
 
-my $svnrev = '$Revision: 69614 $';
+my $svnrev = '$Revision: 69711 $';
 $svnrev =~ m/: ([0-9]+) /;
 $::installerrevision = ($1 ? $1 : 'unknown');
 
@@ -3582,7 +3582,7 @@ This script and its documentation were written for the TeX Live
 distribution (L<https://tug.org/texlive>) and both are licensed under the
 GNU General Public License Version 2 or later.
 
-$Id: install-tl 69614 2024-01-27 22:48:16Z karl $
+$Id: install-tl 69711 2024-02-05 17:23:27Z karl $
 =cut
 
 # to remake HTML version: pod2html --cachedir=/tmp install-tl >/tmp/itl.html

@@ -1,0 +1,678 @@
+[Tue Feb 13 17:50:40 2024] running mktexlsr
+[Tue Feb 13 17:50:41 2024] success, output:
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Tue Feb 13 17:50:41 2024] running updmap-sys
+[Tue Feb 13 17:50:44 2024] success, output:
+updmap will read the following updmap.cfg files (in precedence order):
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg
+updmap may write changes to the following updmap.cfg file:
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/updmap.cfg
+dvips output dir: "c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap"
+pdftex output dir: "c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap"
+dvipdfmx output dir: "c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap"
+
+updmap is creating new map files
+using the following configuration:
+  LW35 font names                  : URWkb (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  prefer outlines                  : true (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  texhash enabled                  : true
+  download standard fonts (dvips)  : true (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  download standard fonts (pdftex) : true (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaEmbed replacement string       : haranoaji (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaVariant replacement string     : -04 (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  scEmbed replacement string       : arphic (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  tcEmbed replacement string       : arphic (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  koEmbed replacement string       : baekmuk (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  create a mapfile for pxdvi       : false (default)
+
+Scanning for LW35 support files  [  3 files]
+Scanning for MixedMap entries    [ 11 files]
+Scanning for KanjiMap entries    [  0 files]
+Scanning for Map entries         [ 33 files]
+
+Generating output for dvipdfmx...
+Generating output for ps2pk...
+Generating output for dvips...
+Generating output for pdftex...
+
+Files generated:
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap:
+       16125 2024-02-13 17:50:42 builtin35.map
+       21599 2024-02-13 17:50:42 download35.map
+      486558 2024-02-13 17:50:42 psfonts_pk.map
+      494335 2024-02-13 17:50:42 psfonts_t1.map
+      494330 2024-02-13 17:50:42 ps2pk.map
+      494335 2024-02-13 17:50:42 psfonts.map = psfonts_t1.map
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap:
+      494337 2024-02-13 17:50:43 pdftex_dl14.map
+      492672 2024-02-13 17:50:43 pdftex_ndl14.map
+      494337 2024-02-13 17:50:43 pdftex.map = pdftex_dl14.map
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap:
+         397 2024-02-13 17:50:42 kanjix.map
+
+Transcript written on: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/updmap.log
+updmap: updating ls-R files.
+--end of output of updmap-sys.
+
+[Tue Feb 13 17:50:44 2024] running fmtutil-sys --byfmt latex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:50:53 2024] success, output:
+fmtutil: fmtutil is using the following fmtutil.cnf files (in precedence order):
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/fmtutil.cnf
+fmtutil: fmtutil is using the following fmtutil.cnf file for writing changes:
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/fmtutil.cnf
+fmtutil [INFO]: writing formats under c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c
+fmtutil [INFO]: --- remaking latex with pdftex
+fmtutil: running `pdftex -ini   -jobname=latex -progname=latex -translate-file=cp227.tcx *latex.ini' ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (INITEX)
+ restricted \write18 enabled.
+ (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/tex-ini-files/latex.ini (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/tex-ini-files/pdftexconfig.tex)
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/latex.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/texsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, parameters,
+LaTeX2e <2023-11-01> patch level 1
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex)) hacks, document commands, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlcmm.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omscmsy.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omxcmex.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ucmr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.ltx)) page nos., x-ref, environments, center, verbatim, math definitions, boxes, title, sectioning, contents, floats, footnotes, index, bibliography, output,
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/hyphen.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/hyphen.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/dumyhyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-fr.tex EC French hyphenation patterns (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/conversions/conv-utf8-ec.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-fr.tex))) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/utf8.def (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.dfu) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.dfu) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.dfu) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu)) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/firstaid/latex2e-first-aid-for-external-files.ltx)
+ ) )
+Beginning to dump on file latex.fmt
+ (preloaded format=latex 2024.2.13)
+23838 strings of total length 459107
+1922161 memory locations dumped; current usage is 204&359410
+22115 multiletter control sequences
+\font\nullfont=nullfont
+\font\c__fp_exp_intarray=cmr10 at 0.00002pt
+\font\c__fp_trig_intarray=cmr10 at 0.00003pt
+\font\c_initex_cctab=cmr10 at 0.00005pt
+\font\c_other_cctab=cmr10 at 0.00006pt
+\font\c_str_cctab=cmr10 at 0.00008pt
+\font\g_tmpa_cctab=cmr10 at 0.00009pt
+\font\g_tmpb_cctab=cmr10 at 0.0001pt
+\font\g__regex_state_active_intarray=cmr10 at 0.00012pt
+\font\g__regex_thread_info_intarray=cmr10 at 0.00014pt
+\font\g__regex_submatch_prev_intarray=cmr10 at 0.00015pt
+\font\g__regex_submatch_begin_intarray=cmr10 at 0.00017pt
+\font\g__regex_submatch_end_intarray=cmr10 at 0.00018pt
+\font\g__regex_submatch_case_intarray=cmr10 at 0.0002pt
+\font\g__regex_balance_intarray=cmr10 at 0.00021pt
+\font\g__codepoint_category_index_intarray=cmr10 at 0.00023pt
+\font\g__codepoint_uppercase_index_intarray=cmr10 at 0.00024pt
+\font\g__codepoint_lowercase_index_intarray=cmr10 at 0.00026pt
+\font\g__codepoint_category_blocks_intarray=cmr10 at 0.00027pt
+\font\g__codepoint_uppercase_blocks_intarray=cmr10 at 0.00029pt
+\font\g__codepoint_lowercase_blocks_intarray=cmr10 at 0.0003pt
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+\font\c_code_cctab=cmr10 at 0.00032pt
+\font\c_document_cctab=cmr10 at 0.00034pt
+558062 words of font info for 36 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 7823 has 272 ops out of 35111
+  89 for language 5
+  2 for language 1
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on latex.log.
+fmtutil [INFO]: log file copied to: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/pdftex/latex.log
+fmtutil [INFO]: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/pdftex/latex.fmt installed.
+fmtutil [INFO]: successfully rebuilt formats: 1
+fmtutil [INFO]: not selected formats: 13
+fmtutil [INFO]: total formats: 14
+fmtutil [INFO]: exiting with status 0
+--end of output of fmtutil-sys --byfmt latex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie.
+
+[Tue Feb 13 17:50:53 2024]   OK: latex.fmt/pdftex
+[Tue Feb 13 17:50:53 2024] running fmtutil-sys --byfmt dvilualatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:03 2024] success, output:
+fmtutil: fmtutil is using the following fmtutil.cnf files (in precedence order):
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/fmtutil.cnf
+fmtutil: fmtutil is using the following fmtutil.cnf file for writing changes:
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/fmtutil.cnf
+fmtutil [INFO]: writing formats under c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c
+fmtutil [INFO]: --- remaking dvilualatex with luatex
+fmtutil: running `luatex -ini   -jobname=dvilualatex -progname=dvilualatex dvilualatex.ini' ...
+This is LuaTeX, Version 1.17.0 (TeX Live 2023)  (INITEX)
+ restricted system commands enabled.
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/tex-ini-files/dvilualatex.ini (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/tex-ini-files/lualatex.ini (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/tex-ini-files/luatexconfig.tex (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/tex-ini-files/pdftexconfig.tex)) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/latex.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/texsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, parameters,
+LaTeX2e <2023-11-01> patch level 1
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex)) hacks, document commands, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tuenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmtt.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlcmm.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omscmsy.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omxcmex.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ucmr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.ltx)) page nos., x-ref, environments, center, verbatim, math definitions, boxes, title, sectioning, contents, floats, footnotes, index, bibliography, output,  Unicode character data, (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/unicode-data/load-unicode-data.tex 
+load-unicode-data.tex v1.17 (2023-09-18)
+Reading Unicode data
+# UnicodeData-15.1.0.txt
+# Modified 2023-09-18 08:45:00 GMT [JAW]
+)
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/hyphen.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/luababel.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/hyphen.tex)) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/firstaid/latex2e-first-aid-for-external-files.ltx)
+)))
+Beginning to dump on file dvilualatex.fmt
+ (format=dvilualatex 2024.2.13)
+23452 strings using 413591 bytes
+3885597 memory locations dumped; current usage is 204&493200
+22115 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+14 preloaded fonts
+No pages of output.
+Transcript written on dvilualatex.log.
+fmtutil [INFO]: log file copied to: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/luatex/dvilualatex.log
+fmtutil [INFO]: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/luatex/dvilualatex.fmt installed.
+fmtutil [INFO]: successfully rebuilt formats: 1
+fmtutil [INFO]: not selected formats: 13
+fmtutil [INFO]: total formats: 14
+fmtutil [INFO]: exiting with status 0
+--end of output of fmtutil-sys --byfmt dvilualatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie.
+
+[Tue Feb 13 17:51:03 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex
+[Tue Feb 13 17:51:03 2024] running fmtutil-sys --byfmt xelatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:12 2024] success, output:
+fmtutil: fmtutil is using the following fmtutil.cnf files (in precedence order):
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/fmtutil.cnf
+fmtutil: fmtutil is using the following fmtutil.cnf file for writing changes:
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/fmtutil.cnf
+fmtutil [INFO]: writing formats under c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c
+fmtutil [INFO]: --- remaking xelatex with xetex
+fmtutil: running `xetex -ini   -jobname=xelatex -progname=xelatex -etex xelatex.ini' ...
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (INITEX)
+ restricted \write18 enabled.
+entering extended mode
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/tex-ini-files/xelatex.ini (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/latex.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/texsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, parameters,
+LaTeX2e <2023-11-01> patch level 1
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex)) hacks, document commands, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tuenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmtt.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlcmm.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omscmsy.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omxcmex.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ucmr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.ltx)) page nos., x-ref, environments, center, verbatim, math definitions, boxes, title, sectioning, contents, floats, footnotes, index, bibliography, output,  Unicode character data, (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/unicode-data/load-unicode-data.tex 
+load-unicode-data.tex v1.17 (2023-09-18)
+Reading Unicode data
+# UnicodeData-15.1.0.txt
+# Modified 2023-09-18 08:45:00 GMT [JAW]
+)
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/hyphen.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/hyphen.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/dumyhyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-fr.tex UTF-8 French hyphenation patterns (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-fr.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/patterns/quote/hyph-quote-fr.tex))) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/firstaid/latex2e-first-aid-for-external-files.ltx)
+ ) )
+Beginning to dump on file xelatex.fmt
+ (preloaded format=xelatex 2024.2.13)
+88679 strings of total length 449465
+1914916 memory locations dumped; current usage is 302&353543
+22028 multiletter control sequences
+\font\nullfont=nullfont
+\font\c__fp_exp_intarray=cmr10 at 0.00002pt
+\font\c__fp_trig_intarray=cmr10 at 0.00003pt
+\font\c_initex_cctab=cmr10 at 0.00005pt
+\font\c_other_cctab=cmr10 at 0.00006pt
+\font\c_str_cctab=cmr10 at 0.00008pt
+\font\g_tmpa_cctab=cmr10 at 0.00009pt
+\font\g_tmpb_cctab=cmr10 at 0.0001pt
+\font\g__regex_state_active_intarray=cmr10 at 0.00012pt
+\font\g__regex_thread_info_intarray=cmr10 at 0.00014pt
+\font\g__regex_submatch_prev_intarray=cmr10 at 0.00015pt
+\font\g__regex_submatch_begin_intarray=cmr10 at 0.00017pt
+\font\g__regex_submatch_end_intarray=cmr10 at 0.00018pt
+\font\g__regex_submatch_case_intarray=cmr10 at 0.0002pt
+\font\g__regex_balance_intarray=cmr10 at 0.00021pt
+\font\g__codepoint_category_index_intarray=cmr10 at 0.00023pt
+\font\g__codepoint_uppercase_index_intarray=cmr10 at 0.00024pt
+\font\g__codepoint_lowercase_index_intarray=cmr10 at 0.00026pt
+\font\g__codepoint_category_blocks_intarray=cmr10 at 0.00027pt
+\font\g__codepoint_uppercase_blocks_intarray=cmr10 at 0.00029pt
+\font\g__codepoint_lowercase_blocks_intarray=cmr10 at 0.0003pt
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+\font\c_code_cctab=cmr10 at 0.00032pt
+\font\c_document_cctab=cmr10 at 0.00034pt
+558062 words of font info for 36 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 15785 has 272 ops out of 35111
+  89 for language 5
+  2 for language 1
+  181 for language 0
+No pages of output.
+Transcript written on xelatex.log.
+fmtutil [INFO]: log file copied to: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/xetex/xelatex.log
+fmtutil [INFO]: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/xetex/xelatex.fmt installed.
+fmtutil [INFO]: successfully rebuilt formats: 1
+fmtutil [INFO]: not selected formats: 13
+fmtutil [INFO]: total formats: 14
+fmtutil [INFO]: exiting with status 0
+--end of output of fmtutil-sys --byfmt xelatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie.
+
+[Tue Feb 13 17:51:12 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex xelatex.fmt/xetex
+[Tue Feb 13 17:51:12 2024] running fmtutil-sys --byfmt pdflatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:20 2024] success, output:
+fmtutil: fmtutil is using the following fmtutil.cnf files (in precedence order):
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/fmtutil.cnf
+fmtutil: fmtutil is using the following fmtutil.cnf file for writing changes:
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/fmtutil.cnf
+fmtutil [INFO]: writing formats under c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c
+fmtutil [INFO]: --- remaking pdflatex with pdftex
+fmtutil: running `pdftex -ini   -jobname=pdflatex -progname=pdflatex -translate-file=cp227.tcx *pdflatex.ini' ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (INITEX)
+ restricted \write18 enabled.
+ (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/tex-ini-files/pdflatex.ini (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/tex-ini-files/pdftexconfig.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/latex.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/texsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, parameters,
+LaTeX2e <2023-11-01> patch level 1
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex)) hacks, document commands, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlcmm.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omscmsy.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omxcmex.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ucmr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.ltx)) page nos., x-ref, environments, center, verbatim, math definitions, boxes, title, sectioning, contents, floats, footnotes, index, bibliography, output,
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/hyphen.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/hyphen.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/dumyhyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/zerohyph.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-fr.tex EC French hyphenation patterns (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/conversions/conv-utf8-ec.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-fr.tex))) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/utf8.def (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.dfu) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.dfu) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.dfu) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu)) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/firstaid/latex2e-first-aid-for-external-files.ltx)
+ ) )
+Beginning to dump on file pdflatex.fmt
+ (preloaded format=pdflatex 2024.2.13)
+23839 strings of total length 459133
+1922164 memory locations dumped; current usage is 204&359416
+22115 multiletter control sequences
+\font\nullfont=nullfont
+\font\c__fp_exp_intarray=cmr10 at 0.00002pt
+\font\c__fp_trig_intarray=cmr10 at 0.00003pt
+\font\c_initex_cctab=cmr10 at 0.00005pt
+\font\c_other_cctab=cmr10 at 0.00006pt
+\font\c_str_cctab=cmr10 at 0.00008pt
+\font\g_tmpa_cctab=cmr10 at 0.00009pt
+\font\g_tmpb_cctab=cmr10 at 0.0001pt
+\font\g__regex_state_active_intarray=cmr10 at 0.00012pt
+\font\g__regex_thread_info_intarray=cmr10 at 0.00014pt
+\font\g__regex_submatch_prev_intarray=cmr10 at 0.00015pt
+\font\g__regex_submatch_begin_intarray=cmr10 at 0.00017pt
+\font\g__regex_submatch_end_intarray=cmr10 at 0.00018pt
+\font\g__regex_submatch_case_intarray=cmr10 at 0.0002pt
+\font\g__regex_balance_intarray=cmr10 at 0.00021pt
+\font\g__codepoint_category_index_intarray=cmr10 at 0.00023pt
+\font\g__codepoint_uppercase_index_intarray=cmr10 at 0.00024pt
+\font\g__codepoint_lowercase_index_intarray=cmr10 at 0.00026pt
+\font\g__codepoint_category_blocks_intarray=cmr10 at 0.00027pt
+\font\g__codepoint_uppercase_blocks_intarray=cmr10 at 0.00029pt
+\font\g__codepoint_lowercase_blocks_intarray=cmr10 at 0.0003pt
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+\font\c_code_cctab=cmr10 at 0.00032pt
+\font\c_document_cctab=cmr10 at 0.00034pt
+558062 words of font info for 36 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 7823 has 272 ops out of 35111
+  89 for language 5
+  2 for language 1
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on pdflatex.log.
+fmtutil [INFO]: log file copied to: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/pdftex/pdflatex.log
+fmtutil [INFO]: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/pdftex/pdflatex.fmt installed.
+fmtutil [INFO]: successfully rebuilt formats: 1
+fmtutil [INFO]: not selected formats: 13
+fmtutil [INFO]: total formats: 14
+fmtutil [INFO]: exiting with status 0
+--end of output of fmtutil-sys --byfmt pdflatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie.
+
+[Tue Feb 13 17:51:20 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex xelatex.fmt/xetex pdflatex.fmt/pdftex
+[Tue Feb 13 17:51:20 2024] running fmtutil-sys --byfmt lualatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie
+[Tue Feb 13 17:51:30 2024] success, output:
+fmtutil: fmtutil is using the following fmtutil.cnf files (in precedence order):
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/fmtutil.cnf
+fmtutil: fmtutil is using the following fmtutil.cnf file for writing changes:
+fmtutil:   c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/fmtutil.cnf
+fmtutil [INFO]: writing formats under c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c
+fmtutil [INFO]: --- remaking lualatex with luahbtex
+fmtutil: running `luahbtex -ini   -jobname=lualatex -progname=lualatex lualatex.ini' ...
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (INITEX)
+ restricted system commands enabled.
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/tex-ini-files/lualatex.ini (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/tex-ini-files/luatexconfig.tex (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/tex-ini-files/pdftexconfig.tex)) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/latex.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/texsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, parameters,
+LaTeX2e <2023-11-01> patch level 1
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.ltx (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex)) hacks, document commands, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fonttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omsenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tuenc.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/tulmtt.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/t1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmr.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmss.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ot1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/fontmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omlcmm.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omscmsy.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/omxcmex.fd) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/ucmr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/base/preload.ltx)) page nos., x-ref, environments, center, verbatim, math definitions, boxes, title, sectioning, contents, floats, footnotes, index, bibliography, output,  Unicode character data, (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/unicode-data/load-unicode-data.tex 
+load-unicode-data.tex v1.17 (2023-09-18)
+Reading Unicode data
+# UnicodeData-15.1.0.txt
+# Modified 2023-09-18 08:45:00 GMT [JAW]
+)
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+(c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/hyphen.cfg (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/babel/luababel.def) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/generic/hyphen/hyphen.tex)) (c:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/tex/latex/firstaid/latex2e-first-aid-for-external-files.ltx)
+))
+Beginning to dump on file lualatex.fmt
+ (format=lualatex 2024.2.13)
+23447 strings using 413567 bytes
+3886529 memory locations dumped; current usage is 204&492529
+22115 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+14 preloaded fonts
+warning  (pdf backend): no pages of output.
+Transcript written on lualatex.log.
+fmtutil [INFO]: log file copied to: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/luahbtex/lualatex.log
+fmtutil [INFO]: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/luahbtex/lualatex.fmt installed.
+fmtutil [INFO]: successfully rebuilt formats: 1
+fmtutil [INFO]: not selected formats: 13
+fmtutil [INFO]: total formats: 14
+fmtutil [INFO]: exiting with status 0
+--end of output of fmtutil-sys --byfmt lualatex --no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit --status-file=C:\Users\satalay\AppData\Local\Temp\X74ABfKvFV\gqIAk627Ie.
+
+[Tue Feb 13 17:51:30 2024]   OK: latex.fmt/pdftex dvilualatex.fmt/luatex xelatex.fmt/xetex pdflatex.fmt/pdftex lualatex.fmt/luahbtex
+[Tue Feb 13 17:52:30 2024] running mktexlsr
+[Tue Feb 13 17:52:31 2024] success, output:
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/ARCHIVE/rendercv-v1/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Tue Feb 13 17:52:31 2024] running updmap-sys
+[Tue Feb 13 17:52:34 2024] success, output:
+updmap will read the following updmap.cfg files (in precedence order):
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg
+updmap may write changes to the following updmap.cfg file:
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-config/web2c/updmap.cfg
+dvips output dir: "c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap"
+pdftex output dir: "c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap"
+dvipdfmx output dir: "c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap"
+
+updmap is creating new map files
+using the following configuration:
+  LW35 font names                  : URWkb (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  prefer outlines                  : true (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  texhash enabled                  : true
+  download standard fonts (dvips)  : true (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  download standard fonts (pdftex) : true (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaEmbed replacement string       : haranoaji (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaVariant replacement string     : -04 (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  scEmbed replacement string       : arphic (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  tcEmbed replacement string       : arphic (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  koEmbed replacement string       : baekmuk (c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  create a mapfile for pxdvi       : false (default)
+
+Scanning for LW35 support files  [  3 files]
+Scanning for MixedMap entries    [ 11 files]
+Scanning for KanjiMap entries    [  0 files]
+Scanning for Map entries         [ 34 files]
+
+Generating output for dvipdfmx...
+Generating output for ps2pk...
+Generating output for dvips...
+Generating output for pdftex...
+
+Files generated:
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap:
+       16125 2024-02-13 17:52:32 builtin35.map
+       21599 2024-02-13 17:52:32 download35.map
+      566799 2024-02-13 17:52:32 psfonts_pk.map
+      574576 2024-02-13 17:52:32 psfonts_t1.map
+      574571 2024-02-13 17:52:32 ps2pk.map
+      574576 2024-02-13 17:52:32 psfonts.map = psfonts_t1.map
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap:
+      574578 2024-02-13 17:52:33 pdftex_dl14.map
+      572913 2024-02-13 17:52:33 pdftex_ndl14.map
+      574578 2024-02-13 17:52:33 pdftex.map = pdftex_dl14.map
+  c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap:
+         397 2024-02-13 17:52:32 kanjix.map
+
+Transcript written on: c:/git/archive/rendercv-v1/rendercv/tinytex-release/tinytex/texmf-var/web2c/updmap.log
+updmap: updating ls-R files.
+--end of output of updmap-sys.
+

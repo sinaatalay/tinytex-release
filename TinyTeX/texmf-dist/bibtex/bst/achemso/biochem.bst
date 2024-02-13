@@ -663,7 +663,7 @@ FUNCTION { count.entries } {
 
 
 FUNCTION { begin.bib } {
-  "achemso 2022-11-25 v3.13f" top$
+  "achemso 2024-01-30 v3.13g" top$
   preamble$ empty$
     { }
     {

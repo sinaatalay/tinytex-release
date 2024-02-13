@@ -99,7 +99,7 @@
   \ifnum#2>2014 \ifnum#2<2038
     \bbl@afterfi\expandafter\@gobble
   \fi\fi
-    {\bbl@error{Year~out~of~range}{The~allowed~range~is~2014-2038}}%
+    {\bbl@error{year-out-range}{2014-2038}{}{}}%
   \edef\bbl@tempd{\fp_eval:n{ % (Julian) day
     \bbl@cs@jd{#2}{#3}{#4} + 0.5 - 2400000 #1}}%
   \count@\@ne
