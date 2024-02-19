@@ -1,8 +1,0 @@
-name makeindex.windows
-category Package
-revision 65891
-shortdesc windows files of makeindex
-containersize 20712
-containerchecksum c1c8095a54fdd8017043abff3db31f04a8ba22ec6594e4015e2324e901e546fd516f9d396599517c48d7fc9a0c2148507b638cb0650964cd7ecc3daf6253a538
-binfiles arch=windows size=23
- bin/windows/makeindex.exe
