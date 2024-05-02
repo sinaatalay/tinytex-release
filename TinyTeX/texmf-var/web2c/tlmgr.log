@@ -1,0 +1,15 @@
+[Wed May  1 17:25:32 2024] install: paracol
+[Wed May  1 17:25:32 2024] command: mktexlsr
+[Wed May  1 17:25:43 2024] install: academicons
+[Wed May  1 17:25:43 2024] install: arydshln
+[Wed May  1 17:25:44 2024] install: moderncv
+[Wed May  1 17:25:44 2024] command: mktexlsr
+[Wed May  1 17:25:59 2024] install: sourcesanspro
+[Wed May  1 17:25:59 2024] command: mktexlsr
+[Wed May  1 17:25:59 2024] command: updmap-sys
+[Wed May  1 17:27:03 2024] remove: sourcesanspro
+[Wed May  1 17:27:03 2024] command: mktexlsr
+[Wed May  1 17:27:04 2024] command: updmap-sys
+[Wed May  1 17:27:20 2024] install: sourcesanspro
+[Wed May  1 17:27:20 2024] command: mktexlsr
+[Wed May  1 17:27:21 2024] command: updmap-sys

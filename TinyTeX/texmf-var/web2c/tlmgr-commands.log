@@ -1,0 +1,224 @@
+[Wed May  1 17:25:32 2024] running mktexlsr
+[Wed May  1 17:25:32 2024] success, output:
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Wed May  1 17:25:44 2024] running mktexlsr
+[Wed May  1 17:25:45 2024] success, output:
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Wed May  1 17:25:59 2024] running mktexlsr
+[Wed May  1 17:25:59 2024] success, output:
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Wed May  1 17:25:59 2024] running updmap-sys
+[Wed May  1 17:26:03 2024] success, output:
+updmap will read the following updmap.cfg files (in precedence order):
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg
+updmap may write changes to the following updmap.cfg file:
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-config/web2c/updmap.cfg
+dvips output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap"
+pdftex output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap"
+dvipdfmx output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap"
+
+updmap is creating new map files
+using the following configuration:
+  LW35 font names                  : URWkb (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  prefer outlines                  : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  texhash enabled                  : true
+  download standard fonts (dvips)  : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  download standard fonts (pdftex) : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaEmbed replacement string       : haranoaji (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaVariant replacement string     : -04 (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  scEmbed replacement string       : arphic (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  tcEmbed replacement string       : arphic (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  koEmbed replacement string       : baekmuk (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  create a mapfile for pxdvi       : false (default)
+
+Scanning for LW35 support files  [  3 files]
+Scanning for MixedMap entries    [ 11 files]
+Scanning for KanjiMap entries    [  0 files]
+Scanning for Map entries         [ 34 files]
+
+Generating output for dvipdfmx...
+Generating output for ps2pk...
+Generating output for dvips...
+Generating output for pdftex...
+
+Files generated:
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap:
+       16103 2024-05-01 17:26:01 builtin35.map
+       21577 2024-05-01 17:26:01 download35.map
+      566777 2024-05-01 17:26:01 psfonts_pk.map
+      574554 2024-05-01 17:26:01 psfonts_t1.map
+      574549 2024-05-01 17:26:01 ps2pk.map
+      574554 2024-05-01 17:26:01 psfonts.map = psfonts_t1.map
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap:
+      574556 2024-05-01 17:26:01 pdftex_dl14.map
+      572891 2024-05-01 17:26:01 pdftex_ndl14.map
+      574556 2024-05-01 17:26:01 pdftex.map = pdftex_dl14.map
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap:
+         375 2024-05-01 17:26:01 kanjix.map
+
+Transcript written on: c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/web2c/updmap.log
+updmap: updating ls-R files.
+--end of output of updmap-sys.
+
+[Wed May  1 17:27:03 2024] running mktexlsr
+[Wed May  1 17:27:03 2024] success, output:
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Wed May  1 17:27:04 2024] running updmap-sys
+[Wed May  1 17:27:06 2024] success, output:
+updmap will read the following updmap.cfg files (in precedence order):
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg
+updmap may write changes to the following updmap.cfg file:
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-config/web2c/updmap.cfg
+dvips output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap"
+pdftex output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap"
+dvipdfmx output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap"
+
+updmap is creating new map files
+using the following configuration:
+  LW35 font names                  : URWkb (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  prefer outlines                  : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  texhash enabled                  : true
+  download standard fonts (dvips)  : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  download standard fonts (pdftex) : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaEmbed replacement string       : haranoaji (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaVariant replacement string     : -04 (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  scEmbed replacement string       : arphic (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  tcEmbed replacement string       : arphic (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  koEmbed replacement string       : baekmuk (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  create a mapfile for pxdvi       : false (default)
+
+Scanning for LW35 support files  [  3 files]
+Scanning for MixedMap entries    [ 11 files]
+Scanning for KanjiMap entries    [  0 files]
+Scanning for Map entries         [ 33 files]
+
+Generating output for dvipdfmx...
+Generating output for ps2pk...
+Generating output for dvips...
+Generating output for pdftex...
+
+Files generated:
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap:
+       16103 2024-05-01 17:27:05 builtin35.map
+       21577 2024-05-01 17:27:05 download35.map
+      486536 2024-05-01 17:27:05 psfonts_pk.map
+      494313 2024-05-01 17:27:05 psfonts_t1.map
+      494308 2024-05-01 17:27:05 ps2pk.map
+      494313 2024-05-01 17:27:05 psfonts.map = psfonts_t1.map
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap:
+      494315 2024-05-01 17:27:05 pdftex_dl14.map
+      492650 2024-05-01 17:27:05 pdftex_ndl14.map
+      494315 2024-05-01 17:27:05 pdftex.map = pdftex_dl14.map
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap:
+         375 2024-05-01 17:27:05 kanjix.map
+
+Transcript written on: c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/web2c/updmap.log
+updmap: updating ls-R files.
+--end of output of updmap-sys.
+
+[Wed May  1 17:27:20 2024] running mktexlsr
+[Wed May  1 17:27:20 2024] success, output:
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-local/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-config/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-var/ls-R.
+mktexlsr: Updating C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R...
+mktexlsr: Updated C:/GIT/rendercv/rendercv/tinytex-release/TinyTeX/texmf-dist/ls-R.
+mktexlsr: Done.
+--end of output of mktexlsr.
+
+[Wed May  1 17:27:21 2024] running updmap-sys
+[Wed May  1 17:27:24 2024] success, output:
+updmap will read the following updmap.cfg files (in precedence order):
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg
+updmap may write changes to the following updmap.cfg file:
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-config/web2c/updmap.cfg
+dvips output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap"
+pdftex output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap"
+dvipdfmx output dir: "c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap"
+
+updmap is creating new map files
+using the following configuration:
+  LW35 font names                  : URWkb (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  prefer outlines                  : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  texhash enabled                  : true
+  download standard fonts (dvips)  : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  download standard fonts (pdftex) : true (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaEmbed replacement string       : haranoaji (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  jaVariant replacement string     : -04 (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  scEmbed replacement string       : arphic (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  tcEmbed replacement string       : arphic (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  koEmbed replacement string       : baekmuk (c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-dist/web2c/updmap.cfg)
+  create a mapfile for pxdvi       : false (default)
+
+Scanning for LW35 support files  [  3 files]
+Scanning for MixedMap entries    [ 11 files]
+Scanning for KanjiMap entries    [  0 files]
+Scanning for Map entries         [ 34 files]
+
+Generating output for dvipdfmx...
+Generating output for ps2pk...
+Generating output for dvips...
+Generating output for pdftex...
+
+Files generated:
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvips/updmap:
+       16103 2024-05-01 17:27:22 builtin35.map
+       21577 2024-05-01 17:27:22 download35.map
+      566777 2024-05-01 17:27:22 psfonts_pk.map
+      574554 2024-05-01 17:27:22 psfonts_t1.map
+      574549 2024-05-01 17:27:22 ps2pk.map
+      574554 2024-05-01 17:27:22 psfonts.map = psfonts_t1.map
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/pdftex/updmap:
+      574556 2024-05-01 17:27:22 pdftex_dl14.map
+      572891 2024-05-01 17:27:22 pdftex_ndl14.map
+      574556 2024-05-01 17:27:22 pdftex.map = pdftex_dl14.map
+  c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/fonts/map/dvipdfmx/updmap:
+         375 2024-05-01 17:27:22 kanjix.map
+
+Transcript written on: c:/git/rendercv/rendercv/tinytex-release/tinytex/texmf-var/web2c/updmap.log
+updmap: updating ls-R files.
+--end of output of updmap-sys.
+
