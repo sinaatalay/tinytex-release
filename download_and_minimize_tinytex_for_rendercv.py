@@ -1,11 +1,11 @@
+import logging
 import pathlib
+import shutil
 import subprocess
 import sys
-import logging
-import shutil
 from venv import logger
-import requests
 
+import requests
 
 # some important paths:
 tinytex_release_path = pathlib.Path(__file__).parent
